@@ -17,11 +17,17 @@ module.exports = {
       secondary: {
         100: '#E2E2D5',
         200: '#888883',
+        300:'#E812B9',
       }
     },
     fontFamily: {
       body: ['Poppins']
-    }
+    },
+    width: {
+      '484': '484px',
+      '436': '436px',
+      'konga-jumia': '252px'
+     }
   },
   },
   plugins: [],
