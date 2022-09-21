@@ -25,6 +25,8 @@ module.exports = {
       body: ['Poppins']
     },
     width: {
+      '400':'400px',
+      '834':'834px',
       '484': '484px',
       '415':'415px',
       '436': '436px',
