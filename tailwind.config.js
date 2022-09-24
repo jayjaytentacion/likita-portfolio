@@ -15,11 +15,15 @@ module.exports = {
     extend: {   colors: {
       primary: '#FF6363',
       rondap:'#1F1F1F',
+      web_black:'#252525',
+      hex:'#1a1a1a',
       secondary: {
         100: '#E2E2D5',
         200: '#888883',
         300:'#E812B9',
-      }
+
+      },
+      linkedin:'#006699'
     },
     fontFamily: {
       body: ['Poppins']
@@ -37,8 +41,11 @@ module.exports = {
      },
      maxWidth: {
       '1440': '1440px',
+    },lineHeight: {
+      '30': '30px',
     }
   },
+  
   },
   plugins: [],
 }
