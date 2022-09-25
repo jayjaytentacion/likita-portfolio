@@ -1,96 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruth Likita</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      /* *{
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruth Likita</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    *{
             border: 1px solid rosybrown;
-        } */
-    </style>
+        }
+  </style>
 </head>
 
-<body class="font-body tracking-wide max-w-1440 mx-auto">
-    <nav class="mt-6 ml-6 md:flex md:justify-between tracking-tighter">
-        <div class="flex justify-between items-start">
-            <h1 class="font-bold" href="#">Likita Ruth</h1>
-            <div class=" px-4 cursor-pointer md:hidden" id="burger">
-                <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
-              </div>
-           
-        </div>
-              <ul class="text-right text-xs pr-5 md:flex justify-evenly hidden " id="menu">
-                <li class="mt-2 mb-2 md:ml-2 md:mt-0"><a href=""> Projects</a></li>
-                <li class="mb-2 md:ml-2">About</li>
-                <li class="md:ml-2">Contact</li>
-                <li class="flex justify-end mt-2 md:mt-0 md:ml-2"><div class="w-4 h-4 bg-blue-700"><img src="img/Vector.png" alt="linkedin"></div></li>
-            </ul> 
-      </nav>
-      <div class="border-b border-gray-200 mt-2 "></div>
+<body class="font-body tracking-wide max-w-1440 mx-auto leading-30">
+  <nav class="bg-white border-gray-200  mx-6 lg:mx-10 xl:mx-28 mt-4 lg:mt-12  rounded dark:bg-gray-900">
+    <div class=" flex flex-wrap md:flex-nowrap justify-between items-center ">
+      <h1 class="font-semibold lg:text-3xl" href="#">Likita Ruth</h1>
+      <button id="burger" data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="menu">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:items-center md:mt-0 md:text-sm md:border-0 md:bg-white ">
+          <li class="flex justify-end">
+            <a href="#" class="my-2  md:ml-4 md:my-0 lg:ml-6 border-b border-black pb-1">Projects</a>
+          </li>
+          <li class="flex justify-end">
+            <a href="#" class="mb-2 md:ml-4 md:my-0 lg:ml-6 ">About</a>
+          </li>
+          <li class="flex justify-end">
+            <a href="#" class="md:ml-4 md:my-0 lg:ml-6">Contact</a>
+          </li>
+          <li class="flex justify-end">
+            <div class=" w-6 h-6  bg-linkedin rounded-sm my-2 ml-3 lg:ml-14 p-1"><img class="w-full"
+                src="img/Vector.png" alt="linkedin"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="border-b border-gray-200"></div>
 
-      <main class="mx-6 lg:mx-10 xl:mx-28 ">
-      <div class="mt-9 lg:flex lg:justify-evenly  mb-28 lg:mb-52">
-        <div class="mb-14 md:mx-auto lg:mx-0 lg:mr-6 lg:w-484 xl:w-607"><img class="mx-auto " src="images/Frame 33960.png" alt="bystfy"> </div>
-        <div class="lg:w-436 xl:w-545">
-          
-                <h2 class="mb-4 font-semibold text-3xl">Bystfy</h2>
-                <h4 class="mb-4 font-medium">A Chunk website. An app that enables users split between CSV or JSON files.</h4>
-                <p class="mb-4">This responsive project aims at enabling users split files in CSV or JSON format, these files can be saved to users account or downloaded to users computer.</p>
-                <div class="border-b border-gray-200 my-8 "></div>
-                <div class="text-center lg:flex lg:flex-row-reverse lg:justify-end lg:text-left ">
-                  <div class="mb-8 lg:mb-0 ">
-                    <h4 class="font-semibold mb-4">Roles</h4> 
-                     <p class="">UX Writing</p>
-                     <p class="">User Research</p>
-                     <p class="">Visual Design</p>
-                </div>
-                <div class="mb-8 lg:mr-16">
-                  <h4 class="font-semibold mb-4">Tools</h4> 
-                   <p class="grabby-p">Miro</p>
-                   <p class="grabby-p">Figma</p>
-              </div>
-                    <div class="mb-8 lg:mr-16">
-                         <h4 class="font-semibold mb-4">Duration</h4> 
-                         <p class="grabby-p"> Feb-April 2022</p>
-                    </div> 
-                </div>
-            </div>
+  <main class="mx-6 lg:mx-10 xl:mx-28 ">
+    <div class="mt-9 lg:flex lg:justify-evenly  mb-28 lg:mb-52">
+      <div class="mb-14 md:mx-auto lg:mx-0 lg:mr-6 lg:w-484 xl:w-607"><img class="mx-auto " src="images/Frame 33960.png"
+          alt="bystfy"> </div>
+      <div class="lg:w-436 xl:w-545">
+
+        <h2 class="mb-4 font-semibold text-3xl">Bystfy</h2>
+        <h4 class="mb-4 font-medium">A Chunk website. An app that enables users split between CSV or JSON files.</h4>
+        <p class="mb-4">This responsive project aims at enabling users split files in CSV or JSON format, these files
+          can be saved to users account or downloaded to users computer.</p>
+        <div class="border-b border-gray-200 my-8 "></div>
+        <div class="text-center lg:flex lg:flex-row-reverse lg:justify-end lg:text-left ">
+          <div class="mb-8 lg:mb-0 ">
+            <h4 class="font-semibold mb-4">Roles</h4>
+            <p class="">UX Writing</p>
+            <p class="">User Research</p>
+            <p class="">Visual Design</p>
+          </div>
+          <div class="mb-8 lg:mr-16">
+            <h4 class="font-semibold mb-4">Tools</h4>
+            <p class="grabby-p">Miro</p>
+            <p class="grabby-p">Figma</p>
+          </div>
+          <div class="mb-8 lg:mr-16">
+            <h4 class="font-semibold mb-4">Duration</h4>
+            <p class="grabby-p"> Feb-April 2022</p>
+          </div>
         </div>
       </div>
+    </div>
+    </div>
 
+    <div>
+      <h2 class="h4">Problem Statement</h2>
 
-      <div class="flex justify-between mb-28">
-        <div class="flex items-center justify-between"><img class=" mr-1 w-6 md:w-full" src="images/Arrow 7 (1).png" alt="back arrow">
-          <span>Bytsfy</span>
-        </div>
-
-        <div  class="flex items-center">
-          <span>Grabby</span>
-          <img class=" ml-1 w-6 md:w-full" src="images/Arrow 7.png" alt="forward arrow"></div>
+      <div class="mb-28">
+        <h3 class="font-semibold text-2xl mb-6">
+          Communication
+        </h3>
+        <p>
+          Over the years, resizing files and having them maintain the same quality while functional can be worrisome for
+          a data analyst, receptionist, student, or in any profession especially when it affects productivity.
+        </p>
       </div>
+      <div class="mb-28">
+        <h3 class="font-semibold text-2xl mb-6">
+          Digitilization
+        </h3>
+        <p>
+          Users will always settle for what they have or not delve into in completely when they have limited or no
+          options. Users needed a platform to quickly upload their files and have a functional file in smaller bits to
+          work with.
+
+        </p>
+      </div>
+      <div class="mb-28">
+        <h3 class="font-semibold text-2xl mb-6">
+          Bytsfy
+        </h3>
+        <p>
+          CSV or JSON files can be resized into bits while maintaining the same quality as well as an option to download
+          to computer and save for later.
+
+        </p>
+      </div>
+    </div>
+
+    <div class="mb-28">
+      <div class="w-80 h-80 mx-auto mb-16 bg-black">
+
+      </div>
+      <div>
+        <ul class="text-justify text-xl">
+          <li class="font-semibold italic mb-4">How might we enable CSV and JSON format only? </li>
+          <li class="font-semibold italic mb-4">How might we have users save files after split, compress or convert?
+          </li>
+          <li class="font-semibold italic">How might we ensure users maintain original quality after chunking?</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="mb-28">
+      <div class="flex items-center mb-10">
+        <h2 class="mb-0 font-semibold text-3xl">Research</h2>
+        <div class="ml-4 border-2 border-black w-10 rounded">
+
+        </div>
+      </div>
+      <div class="mb-28">
+        <h3 class="font-semibold text-2xl mb-6">
+          Audience
+        </h3>
+        <p class="text-justify">
+          Student, Receptionist, Data Analyst and many other professions that requires data split to enhance work
+          productivity.
+        </p>
+      </div>
+      <div class="mb-10"><img src="images/Hope Davids 1.png" alt=""></div>
+      <div><img src="images/Kelvin Francis 1.png" alt=""></div>
+
+    </div>
+
+
+    <div class="mb-48">
+      <h2 class="h4">
+        User Story
+      </h2>
+      <div>
+        <img class="mb-6" src="images/Frame 34334 (1).png" alt="">
+      </div>
+      <div>
+        <img src="images/Frame 34335 (1).png" alt="">
+      </div>
+    </div>
+
+    <div>
+      <h2 class="h4">Current state analysis</h2>
+      <p class="mb-10">
+        To compare the fuctionalities of each competitor`s website in compressing/splitting and conversion of CSV and
+        JSON files.
+      </p>
+      <h3 class="font-semibold text-xl mb-10">
+        Who are our key competitors?
+      </h3>
+      <img src="images/Competitive Analysis.png" alt="">
+    </div>
+
+    <div>
+      <h2 class="h4">Wireframes and Flow</h2>
+      <div class="inline-grid grid-cols-2 gap-10 lg:grid-cols-3 w-full">
+        <div class="">
+          <img  src="images/Frame 34321profile.png" alt="">
+        </div>
+        <div>
+          <img src="images/Frame 34322signin.png" alt="">
+        </div>
+        <div>
+          <img class="" src="images/Frame 34323choose.png" alt="">
+        </div>
+        <div>
+          <img src="images/Group 20632progress.png" alt="">
+        </div>
+        <div>
+          <img src="images/Frame 34326complete.png" alt="">
+        </div>
+        <div>
+          <img src="images/Group 20633save.png" alt="">
+        </div>
+        <div>
+          <img src="images/Group 20632ogprofile.png" alt="">
+        </div>
+        <div>
+          <img src="images/Group 20634updatepass.png" alt="">
+        </div>
+        <div class="w-full hidden lg:block">
+          <img class="" src="images/Group 20633saved.png" alt="">
+        </div>
+      </div>
+      <div class="w-full lg:hidden">
+        <img class="mx-auto" src="images/Group 20633saved.png" alt="">
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="flex justify-between mb-28">
+      <div class="flex items-center justify-between"><img class=" mr-1 w-6 md:w-full" src="images/Arrow 7 (1).png"
+          alt="back arrow">
+        <span>Bytsfy</span>
+      </div>
+
+      <div class="flex items-center">
+        <span>Grabby</span>
+        <img class=" ml-1 w-6 md:w-full" src="images/Arrow 7.png" alt="forward arrow">
+      </div>
+    </div>
   </main>
   <footer class="flex justify-between mb-9 font-semibold">
     <div class="ml-6"><span> info@likita.dev </span></div>
     <div class="flex mr-6 items-center">
-      
-        <img class="w-5 h-5 mr-2" src="img/copyright.png" alt="copyright" /> <span class="">  2022 Likita Ruth</span>
+
+      <img class="w-5 h-5 mr-2" src="img/copyright.png" alt="copyright" /> <span class=""> 2022 Likita Ruth</span>
     </div>
   </footer>
 
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script>
-   document.cookie = "name=vimeo; SameSite=None; Secure";
+    document.cookie = "name=vimeo; SameSite=None; Secure";
 
-   
+
   </script>
-  <script>	
+  <script>
     var player = $f(document.getElementById('player'));
-    player.addEvent('ready', function() { 
-    player.api('play');
+    player.addEvent('ready', function () {
+      player.api('play');
     });
   </script>
-  </body>
-  </html>
+</body>
+
+</html>
