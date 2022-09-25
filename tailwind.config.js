@@ -37,13 +37,18 @@ module.exports = {
       '607':'607px',
       '545':'545px',
       '1440':'1440px',
-      'konga-jumia': '252px'
+      'konga-jumia': '252px',
+      '364':'364px',
+      '783':'783px'
      },
      maxWidth: {
       '1440': '1440px',
     },lineHeight: {
       '30': '30px',
-    }
+    },height:{
+      '418':'418px',
+      '472':'472px'
+    },
   },
   
   },
