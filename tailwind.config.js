@@ -49,8 +49,13 @@ module.exports = {
       '418':'418px',
       '472':'472px'
     },
+  }, 
   },
-  
-  },
+  variants: {
+    extend: {
+      visibility: ["group-hover"],
+      display:["hover"]
+    },
+   },
   plugins: [],
 }
