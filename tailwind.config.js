@@ -16,6 +16,7 @@ module.exports = {
       primary: '#FF6363',
       rondap:'#1F1F1F',
       web_black:'#252525',
+      new_black:'#070606',
       hex:'#1a1a1a',
       secondary: {
         100: '#E2E2D5',
