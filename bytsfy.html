@@ -7,10 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ruth Likita</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <style>
     /* * {
       border: 1px solid rosybrown;
     } */
+    .tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
     .test{
       width: 289px;
       height:190px;
@@ -106,7 +118,7 @@
     </div>
     </div>
 
-    <div class="lg:mb-28 tracking-normal">
+    <div class="lg:mb-28 tracking-normal tag">
       <h2 class="h4">0.1 Problem Statement</h2>
       <div class="lg:flex lg:justify-between text-justify">
         <div class="mb-28 lg:w-72 lg:mb-0">
@@ -145,7 +157,7 @@
 
     </div>
 
-    <div class="mb-28 lg:flex lg:justify-between">
+    <div class="mb-28 lg:flex lg:justify-between tag">
       <!-- <div class=" lg:mx-0 w-80 h-80 mx-auto mb-16 bg-black">
       </div> -->
 
@@ -167,7 +179,7 @@
     </div>
 
 
-    <div class="mb-28 lg:mb-52">
+    <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">0.2 Research</h2>
       <div class="mb-14  lg:w-400">
         <h3 class="font-semibold text-2xl mb-6 ">
@@ -190,7 +202,7 @@
     </div>
 
 
-    <div class="mb-28">
+    <div class="mb-28 tag">
       <h2 class="h4 text-center">
         User Story
       </h2>
@@ -205,7 +217,7 @@
 
     </div>
 
-    <div class="mb-28 lg:mb-52">
+    <div class="mb-28 lg:mb-52 tag">
       <h2 class="h4">0.3 Current state analysis</h2>
       <p class="mb-10">
         To compare the fuctionalities of each competitor`s website in compressing/splitting and conversion of CSV and
@@ -217,7 +229,7 @@
       <img src="images/Competitive Analysis.png" alt="">
     </div>
 
-    <div class="mb-28 lg:mb-52">
+    <div class="mb-28 lg:mb-52 tag">
       <h2 class="h4">0.4 Wireframes and Flow</h2>
       <div class="inline-grid grid-cols-2 gap-10 lg:grid-cols-3 w-full lg:mb-28">
         <div class="">
@@ -252,7 +264,7 @@
         <img class="mt-10 mx-auto w-2/5 md:w-64" src="images/Group 20633saved.png" alt="">
       </div>
     </div>
-    <div class="mb-28 lg:mb-52">
+    <div class="mb-28 lg:mb-52 tag">
       <h2 class="h4">
         0.5 Color pattern and Typography
       </h2>
@@ -263,7 +275,7 @@
         <img class="" src="images/Frame 33994.png" alt="">
       </div>
     </div>
-    <div class="mb-28">
+    <div class="mb-28 tag">
       <div class="mb-28">
         <h2 class="h4">
          0.6 Development Phase
@@ -332,7 +344,7 @@
 
     
 
-    <div class="lg">
+    <div class="tag">
       <h2 class="h4">
       0.7  Design Iterations
       </h2>
