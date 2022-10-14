@@ -8,10 +8,27 @@
   <title>Ruth Likita</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <style>
     /* *{
             border: 1px solid rosybrown;
         } */
+        .tag {
+  opacity: 0;
+  transform: matrix(1,0,0,1,0,0);
+  transition: opacity 800ms cubic-bezier(.4,0,.2,1),transform 800ms cubic-bezier(.4,0,.2,1);
+  /* transform: translate(0, 10vh);
+  transition: all 1s; */
+}
+
+.tag.visible {
+  opacity: 1;
+  /* transform: translate(0, 0); */
+  /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 0.65s;
+    transition-delay: 0.0434783s; */
+   
+}
   </style>
 </head>
 

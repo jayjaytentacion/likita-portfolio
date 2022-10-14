@@ -8,10 +8,27 @@
   <title>Ruth Likita</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <style>
     /* *{
             border: 1px solid rosybrown;
         } */
+          .tag {
+  opacity: 0;
+  transform: matrix(1,0,0,1,0,0);
+  transition: opacity 800ms cubic-bezier(.4,0,.2,1),transform 800ms cubic-bezier(.4,0,.2,1);
+  /* transform: translate(0, 10vh);
+  transition: all 1s; */
+}
+
+.tag.visible {
+  opacity: 1;
+  /* transform: translate(0, 0); */
+  /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 0.65s;
+    transition-delay: 0.0434783s; */
+   
+}
   </style>
 </head>
 
@@ -93,7 +110,7 @@
       </div>
 
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">0.1 Objective</h2>
         <div class="lg:flex lg:justify-between">
           <div class="mb-10 lg:w-607">
@@ -109,7 +126,7 @@
 
       </div>
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">0.2 Background</h2>
         <div class="lg:flex lg:justify-between">
           <div class="flex justify-between items-center mb-16">
@@ -144,7 +161,7 @@
 
       </div>
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">
           0.3 Research Insight
         </h2>
@@ -190,7 +207,7 @@
         </div>
       </div>
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">User Persona</h2>
         <div class="lg:flex">
           <div class="mb-6 lg:mb-0"><img src="images/User Personas 1.png" alt=""></div>
@@ -199,7 +216,7 @@
 
       </div>
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
 
         <h2 class="h4">
           0.4 Solution
@@ -216,7 +233,7 @@
         </div>
 
 
-        <div class="eco-sphere  ">
+        <div class="eco-sphere  tag">
           <div class="mb-14 lg:w-545 lg:float-right">
             <h2 class="font-semibold mb-6">
               Eco-Sphere
@@ -230,7 +247,7 @@
         </div>
       </div>
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">
           0.5 Differentiations
         </h2>
@@ -254,7 +271,7 @@
 
 
 
-        <div class="lg:flex">
+        <div class="lg:flex tag">
           <div class="mb-8">
             <h4 class="font-medium mb-6">Ronda focuses on:</h4>
             <div class="flex items-center mb-6"><img class="mr-8" src="images/Ellipse 191.png" alt="list-disc"><span>All
@@ -278,7 +295,7 @@
         </div>
       </div>
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">
           0.6 Behavourial Risk Assesment
         </h2>
@@ -306,7 +323,7 @@
         </div>
       </div>
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">
           0.7 Roadmap and Wireframe
         </h2>
@@ -315,7 +332,7 @@
         <div class="-"><img src="images/wireframes.png" alt=""></div>
       </div>
 
-      <div class="mb-28 lg:mb-52">
+      <div class="mb-28 lg:mb-52 tag">
         <h2 class="h4">
           0.8 Visual Guide
         </h2>
@@ -335,7 +352,7 @@
         </h2>
 
         <div class="lg:flex lg:justify-evenly">
-          <div class="lg:w-400 xl:w-545">
+          <div class="lg:w-400 xl:w-545 tag">
             <h3 class="font-semibold mb-6">
               Onboarding & Authentication
             </h3>
@@ -367,7 +384,7 @@
           </div>
 
 
-          <div class="mb-20 lg:w-400 xl:w-545">
+          <div class="mb-20 lg:w-400 xl:w-545 tag">
             <h3 class="font-semibold mb-6">
               Homepage
             </h3>
@@ -384,7 +401,7 @@
         </div>
 
 
-        <div class="lg:flex lg:justify-evenly">
+        <div class="lg:flex lg:justify-evenly tag">
           <div class="lg:w-400 xl:w-545">
             <h3 class="font-semibold mb-6">
               Virtual Cards
@@ -406,7 +423,7 @@
         </div>
 
 
-        <div class="lg:flex lg:justify-evenly lg:flex-row-reverse">
+        <div class="lg:flex lg:justify-evenly lg:flex-row-reverse tag">
           <div class="lg:w-400 xl:w-545">
             <h3 class="font-semibold mb-6">
               Cheque Deposit
@@ -428,7 +445,7 @@
 
 
 
-        <div class="lg:flex lg:justify-evenly">
+        <div class="lg:flex lg:justify-evenly tag">
           <div class="lg:w-400 xl:w-545">
             <h3 class="font-semibold mb-6">
               Referrals
@@ -449,7 +466,7 @@
         </div>
 
 
-        <div class="lg:flex lg:justify-evenly lg:flex-row-reverse">
+        <div class="lg:flex lg:justify-evenly lg:flex-row-reverse tag">
           <div class="lg:w-400 xl:w-545">
             <h3 class="font-semibold mb-6">
               Helpdesk
@@ -471,7 +488,7 @@
         </div>
 
 
-        <div class="lg:flex lg:justify-evenly ">
+        <div class="lg:flex lg:justify-evenly tag ">
           <div class="lg:w-400 xl:w-545">
             <h3 class="font-semibold mb-6">
               Settings
@@ -509,7 +526,7 @@
     </div>
 
     <div class="mx-6 mb-28 lg:mb-52 lg:mx-10 xl:mx-28">
-      <div class="">
+      <div class="tag">
         <h2 class="h4">
           10. Iterations
         </h2>
@@ -558,7 +575,7 @@
           </div>
         </div>
   
-        <div class="mb-16 lg:mb-52">
+        <div class="mb-16 lg:mb-52 tag">
           <h3 class="font-medium mb-4">Insights</h3>
           <ul class="list-outside list-disc ml-6">
             <li class="mb-2">
@@ -578,7 +595,7 @@
         </div>
       </div>
   
-      <div class="mb-28">
+      <div class="mb-28 tag">
         <h2 class="h4">
           11. Lessons Learned
         </h2>
