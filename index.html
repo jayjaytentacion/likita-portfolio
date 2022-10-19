@@ -20,7 +20,10 @@
   /* transform: translate(0, 10vh);
   transition: all 1s; */
 }
-
+.anim{
+  transform: matrix(1,0,0,1,0,0);
+  transition: opacity 800ms cubic-bezier(.4,0,.2,1),transform 800ms cubic-bezier(.4,0,.2,1);
+}
 .tag.visible {
   opacity: 1;
   /* transform: translate(0, 0); */
@@ -81,7 +84,7 @@
 
     <div class="grid md:grid-cols-2 md:gap-11 mb-36 lg:mb-72">
       <!-- cards -->
-      <div class="place-self-center mb-16  md:place-self-start tag">
+      <div class="place-self-center mb-16  md:place-self-start anim">
         <a href="ronda.html">
           <img src="images/ronda.png" alt="bystfy">
         <span class="block mt-2 font-medium">Ronda</span>
@@ -89,7 +92,7 @@
         
       </div>
 
-      <div class="place-self-center mb-16  md:place-self-end tag">
+      <div class="place-self-center mb-16  md:place-self-end anim">
         <a href="bytsfy.html">
           <img src="images/Bytsfy Scale iamge (1).png" alt="bystfy">
         <span class="block mt-2 font-medium">Bytsfy</span>
