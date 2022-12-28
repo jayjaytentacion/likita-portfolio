@@ -17,6 +17,8 @@ module.exports = {
       rondap:'#1F1F1F',
       web_black:'#252525',
       new_black:'#070606',
+      bg_col: " #fcf7f7",
+      mr : "#003631",
       hex:'#1a1a1a',
       secondary: {
         100: '#E2E2D5',
@@ -24,7 +26,7 @@ module.exports = {
         300:'#E812B9',
 
       },
-      linkedin:'#006699'
+      linkedin:'#006699',
     },
     fontFamily: {
       body: ['Poppins']
@@ -41,6 +43,7 @@ module.exports = {
       'konga-jumia': '252px',
       '364':'364px',
       '783':'783px',
+      '342':'342px',
       '442':'442px'
      },
      maxWidth: {
@@ -51,6 +54,10 @@ module.exports = {
       '418':'418px',
       '472':'472px'
     },
+    boxShadow: {
+      'new': '0 5px 50px rgba(0, 67, 101, 0.08)',
+    }
+  
   }, 
   },
   variants: {
