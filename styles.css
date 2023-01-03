@@ -18530,6 +18530,14 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.bg-ronda-hero{
+  background-image: url('images/Frame 34414.png');
+}
+
+.bg-footer-texture{
+  background-image: url('/img/footer-texture.png');
+}
+
 .from-transparent{
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -51201,6 +51209,14 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-ronda-hero{
+    background-image: url('images/Frame 34414.png');
+  }
+
+  .sm\:bg-footer-texture{
+    background-image: url('/img/footer-texture.png');
+  }
+
   .sm\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -83456,6 +83472,14 @@ video {
 
   .md\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-ronda-hero{
+    background-image: url('images/Frame 34414.png');
+  }
+
+  .md\:bg-footer-texture{
+    background-image: url('/img/footer-texture.png');
   }
 
   .md\:from-transparent{
@@ -115715,6 +115739,14 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-ronda-hero{
+    background-image: url('images/Frame 34414.png');
+  }
+
+  .lg\:bg-footer-texture{
+    background-image: url('/img/footer-texture.png');
+  }
+
   .lg\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -147972,6 +148004,14 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-ronda-hero{
+    background-image: url('images/Frame 34414.png');
+  }
+
+  .xl\:bg-footer-texture{
+    background-image: url('/img/footer-texture.png');
+  }
+
   .xl\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -180227,6 +180267,14 @@ video {
 
   .\32xl\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-ronda-hero{
+    background-image: url('images/Frame 34414.png');
+  }
+
+  .\32xl\:bg-footer-texture{
+    background-image: url('/img/footer-texture.png');
   }
 
   .\32xl\:from-transparent{
