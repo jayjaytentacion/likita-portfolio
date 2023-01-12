@@ -22,6 +22,8 @@ module.exports = {
       hex:'#1a1a1a',
       ticked: "#714DD9",
       grabby: '#EFB94D',
+      ronda:'#8D0CCA',
+      byt: '#0A2A98',
       secondary: {
         100: '#E2E2D5',
         200: '#888883',
