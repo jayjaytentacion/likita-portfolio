@@ -20,6 +20,7 @@ module.exports = {
       bg_col: " #fcf7f7",
       mr : "#003631",
       hex:'#1a1a1a',
+      ticked: "#714DD9",
       secondary: {
         100: '#E2E2D5',
         200: '#888883',
