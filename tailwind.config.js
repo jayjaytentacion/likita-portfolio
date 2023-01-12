@@ -21,6 +21,7 @@ module.exports = {
       mr : "#003631",
       hex:'#1a1a1a',
       ticked: "#714DD9",
+      grabby: '#EFB94D',
       secondary: {
         100: '#E2E2D5',
         200: '#888883',
