@@ -24,6 +24,7 @@ module.exports = {
       grabby: '#EFB94D',
       ronda:'#8D0CCA',
       byt: '#0A2A98',
+      ronda_hero: '#8D0CCA1A',
       secondary: {
         100: '#E2E2D5',
         200: '#888883',
@@ -33,7 +34,8 @@ module.exports = {
       linkedin:'#006699',
     },
     fontFamily: {
-      body: ['Poppins']
+      body: ['Poppins'],
+      lato: ['Lato']
     },
     width: {
       '400':'400px',
@@ -57,13 +59,13 @@ module.exports = {
       '30': '30px',
     },height:{
       '418':'418px',
+      '622':'622px',
       '472':'472px'
     },
     boxShadow: {
       'new': '0 0 50px rgba(0, 67, 101, 0.08)',
     },
     backgroundImage: {
-      'ronda-hero': "url('images/Frame 34414.png')",
       'footer-texture': "url('/img/footer-texture.png')",
     }
   
