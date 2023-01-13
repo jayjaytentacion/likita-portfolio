@@ -59,7 +59,7 @@ module.exports = {
       '472':'472px'
     },
     boxShadow: {
-      'new': '0 5px 50px rgba(0, 67, 101, 0.08)',
+      'new': '0 0 50px rgba(0, 67, 101, 0.08)',
     },
     backgroundImage: {
       'ronda-hero': "url('images/Frame 34414.png')",
