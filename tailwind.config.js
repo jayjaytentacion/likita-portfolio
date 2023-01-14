@@ -25,6 +25,8 @@ module.exports = {
       ronda:'#8D0CCA',
       byt: '#0A2A98',
       ronda_hero: '#8D0CCA1A',
+      by_hero: '#E3F2FE80',
+
       secondary: {
         100: '#E2E2D5',
         200: '#888883',
