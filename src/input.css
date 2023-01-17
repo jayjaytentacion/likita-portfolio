@@ -9,7 +9,7 @@
     @apply italic font-semibold;
 }
 .h4{
-    @apply font-semibold text-3xl mb-10;
+    @apply font-bold text-3xl mb-10;
 }
 .pink{
     @apply text-secondary-300 font-semibold;
