@@ -19,6 +19,8 @@ module.exports = {
       new_black:'#070606',
       bg_col: " #fcf7f7",
       mr : "#003631",
+      ailmobg: 'rgba(106, 157, 255, 0.1)',
+      ailmobord: "rgba(191, 206, 235, 0.2)",
       hex:'#1a1a1a',
       ticked: "#714DD9",
       grabby: '#EFB94D',
