@@ -22,6 +22,7 @@ module.exports = {
       ailmobg: 'rgba(106, 157, 255, 0.1)',
       ailmobord: "rgba(191, 206, 235, 0.2)",
       hex:'#1a1a1a',
+      grabi: '#EFB94D1A',
       g:'#398476',
       g2: '#EFB94D',
       ticked: "#714DD9",
