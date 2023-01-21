@@ -28,6 +28,7 @@ module.exports = {
       ronda:'#8D0CCA',
       byt: '#0A2A98',
       ronda_hero: '#8D0CCA1A',
+      grab: '#EFB94D33',
       by_hero: '#E3F2FE80',
 
       secondary: {
@@ -72,6 +73,7 @@ module.exports = {
     },
     backgroundImage: {
       'footer-texture': "url('/img/footer-texture.png')",
+      'by': "url('/images/Frame 26086672 (1).png')",
     }
   
   }, 
