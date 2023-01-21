@@ -23,6 +23,7 @@ module.exports = {
       ailmobord: "rgba(191, 206, 235, 0.2)",
       hex:'#1a1a1a',
       g:'#398476',
+      g2: '#EFB94D',
       ticked: "#714DD9",
       grabby: '#EFB94D',
       ronda:'#8D0CCA',
