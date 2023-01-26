@@ -8,179 +8,136 @@
   <title>Ruth Likita</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <style>
     /* *{
             border: 1px solid rosybrown;
         } */
-        .tag {
-  opacity: 0;
-  transform: matrix(1,0,0,1,0,0);
-  transition: opacity 800ms cubic-bezier(.4,0,.2,1),transform 800ms cubic-bezier(.4,0,.2,1);
-  /* transform: translate(0, 10vh);
+    .tag {
+      opacity: 0;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      transition: opacity 800ms cubic-bezier(.4, 0, .2, 1), transform 800ms cubic-bezier(.4, 0, .2, 1);
+      /* transform: translate(0, 10vh);
   transition: all 1s; */
-}
+    }
 
-.tag.visible {
-  opacity: 1;
-  /* transform: translate(0, 0); */
-  /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    .tag.visible {
+      opacity: 1;
+      /* transform: translate(0, 0); */
+      /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     transition-duration: 0.65s;
     transition-delay: 0.0434783s; */
-   
-}
+
+    }
   </style>
 </head>
 
 <body class="font-body tracking-wide max-w-1440 mx-auto leading-30 text-web_black">
-  <nav class="bg-white border-gray-200  mx-6 lg:mx-10 xl:mx-28 mt-4 lg:mt-12  rounded dark:bg-gray-900">
-    <div class=" flex flex-wrap md:flex-nowrap justify-between items-center ">
-      <h1 class="font-semibold lg:text-3xl" href="#"><a href="/">Likita Ruth </a> </h1>
-      <button id="burger" data-collapse-toggle="navbar-default" type="button"
-        class="inline-flex items-center px-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="menu">
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:items-center md:mt-0 md:text-sm md:border-0 md:bg-white ">
-          <li class="flex justify-end">
-            <a href="/" class="my-2  md:ml-4 md:my-0 lg:ml-6 border-b border-black">Projects</a>
-          </li>
-          <li class="flex justify-end">
-            <a href="about.html" class="mb-2 md:ml-4 md:my-0 lg:ml-6 ">About</a>
-          </li>
-          <li class="flex justify-end">
-            <a href="contact.html" class="md:ml-4 md:my-0 lg:ml-6">Contact</a>
-          </li>
-          <li class="flex justify-end">
-            <a target="_blank" href="https://www.linkedin.com/in/ruthlikita">
-              <div class=" w-6 h-6  bg-linkedin rounded-sm my-2 ml-3 lg:ml-14 p-1"><img class="w-full"
-                src="img/Vector.png" alt="linkedin"></div>
-            </a>
-          </li>
-        </ul>
+  <div class="bg-grabi h-80 font-lato lg:h-622 mb-20 lg:mb-40" id="top">
+    <h1 class="mx-6 lg:mx-24  pt-4 lg:pt-12 lg:mb-14"><a href="/"><img src="images/logo.png" alt=""></a></h1>
+
+    <img src="images/Group 26086217.png" class="mx-auto w-48 lg:w-442 my-auto" alt="">
+
+  </div>
+
+  <main class="mx-6 lg:mx-28 ">
+    <div class="">
+
+      <h2 class="h4">Grabby</h2>
+      <h4 class="mb-8 font-medium">An E-Commerce solution. This app enables users shop online for a better experience.
+      </h4>
+      <p class="mb-4">This is a Saas project designed to enable users find products and services advertised for
+        purchase. It allows users schedule delivery at convenience, track order In-app once purchase has been made.
+      </p>
+      <div class="text-center lg:flex lg:flex-row-reverse lg:justify-between lg:text-left mt-16 mb-20">
+        <div class="mb-8 lg:mb-0 ">
+          <h4 class="font-semibold mb-4">Roles</h4>
+          <p class="">User Research</p>
+          <p class="">Visual Design</p>
+        </div>
+        <div class="mb-8 lg:mr-16">
+          <h4 class="font-semibold mb-4">Tools</h4>
+          <p class="grabby-p">Miro</p>
+          <p class="grabby-p">Figma</p>
+        </div>
+        <div class="mb-8 lg:mr-16">
+          <h4 class="font-semibold mb-4">Duration</h4>
+          <p class="grabby-p"> Feb-April 2022</p>
+        </div>
       </div>
     </div>
-  </nav>
-  <div class="border-b border-gray-200 w-full mt-2"></div>
+    </div>
+    </div>
 
-  <main class="mx-6 lg:mx-10 xl:mx-28 ">
-    <div class="mt-9 lg:flex lg:justify-evenly  mb-28 lg:mb-52">
-      <div class="mb-14 md:mx-auto lg:mx-0 lg:mr-6 lg:w-484 xl:w-607"><img class="mx-auto " src="images/grabby.png"
-          alt="grabby"> </div>
-      <div class="lg:w-436 xl:w-545">
 
-        <h2 class="h4">Grabby</h2>
-        <h4 class="mb-8 font-medium">An E-Commerce solution. This app enables users shop online for a better experience.
-        </h4>
-        <p class="mb-4">This is a Saas project designed to enable users find products and services advertised for
-          purchase. It allows users schedule delivery at convenience, track order In-app once purchase has been made.
+    <h2 class="h4">0.1 PRELIMINARIES</h2>
+  </main>
+  <div class="mb-20 lg:mb-52 tag bg-grab px-6  pb-10 lg:px-28">
+    <div class="mb-8 lg:flex lg:items-center lg:justify-start pt-8  lg:mb-24">
+      <img class="w-36 mx-auto py-10 lg:mr-20 lg:ml-0 lg:w-72" src="images/Frame 1321314848.png" alt="">
+      <div class=" text-justify lg:w-442 xl:w-607">
+        <h3 class="font-medium text-xl mb-4 ">PROBLEM STATEMENT</h3>
+        <p class="mb-6 ">Since the COVID-19, visiting restaurants has become an issue and as such we’re obliged to cook
+          at home thereby missing out on our Nigerian dishes. Though many try to prepare this meal at home, some
+          ingredients are not easily accessible and some recipes found online are not always resourceful. </p>
+        <p class="">
+          Grabby will be a recipe delivery app that allows users to order pre-packed ingredients kits and make any dish
+          of choice right at home.
         </p>
-        <div class="border-b border-gray-200 my-8 "></div>
-        <div class="text-center lg:flex lg:flex-row-reverse lg:justify-between lg:text-left ">
-          <div class="mb-8 lg:mb-0 ">
-            <h4 class="font-semibold mb-4">Roles</h4>
-            <p class="">UX Writing</p>
-            <p class="">User Research</p>
-            <p class="">Visual Design</p>
-          </div>
-          <div class="mb-8 lg:mr-16">
-            <h4 class="font-semibold mb-4">Tools</h4>
-            <p class="grabby-p">Miro</p>
-            <p class="grabby-p">Figma</p>
-          </div>
-          <div class="mb-8 lg:mr-16">
-            <h4 class="font-semibold mb-4">Duration</h4>
-            <p class="grabby-p"> Feb-April 2022</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-
-
-    <div class="mb-28 lg:mb-52 tag">
-      <h2 class="h4">0.1 Objective</h2>
-      <div class="lg:flex lg:justify-between">
-        <div class="mb-10">
-          <p class="">
-            This project will ensure users make daily online purchase without hassle at the comfort of their homes. <br>
-            Grabby focuses on easing frustrations these shoppers experience by categorising products which enables easy
-            search, <span class="thick">scheduling a delivery at convenience</span> and also <span
-              class="thick">tracking a product </span> once order has been shipped out.
-          </p>
-        </div>
-        <div class="thick"><img class="" src="images/Objective illustration.png" alt="objectives-illustation"></div>
       </div>
     </div>
 
-
-
-
-    <div class="mb-28 lg:mb-52 tag">
-      <h2 class="h4">0.2 The Problem</h2>
-      <div class="lg:flex lg:flex-row-reverse lg:justify-between">
-
-        <div class="mb-14 lg:mb-28 lg:w-484">
-          <p class="mb-16"><span class="thick">In Nigeria</span> , Shopping online has been a norm in recent times.
-            People choose to shop any product of choice from the comfort of their homes which has made stores less
-            crowded and also made life easy for shoppers and business owners.
-            However, shopping online can be difficult most times especially when shoppers get limited service as such
-            leaves them frustrated and unsatisfied.
-          </p>
-          <div class="flex items-center mb-6"><img class="w-14 h-14 mr-6" src="images/problem1.png"
-              alt="problem-illustration"><span class="problem-span"><span class="pink">55M</span> in Nigeria shop
-              online</span></div>
-          <div class="flex items-center mb-6"><img class=" w-14 h-14 mr-6" src="images/problem2.png"
-              alt="problem-illustration"><span class="problem-span"><span class="pink">80%</span> cannot schedule
-              delivery at convenience<span> </div>
-          <div class="flex items-center"><img class="w-14 h-14 mr-6" src="images/problem3.png"
-              alt="problem-illustration"><span class="problem-span"><span class="pink">60%</span> unable to track
-              order</span></div>
-        </div>
-        <div class="mb-16 ">
-
-          <img class="lg:w-415 xl:w-545" src="images/The problem illustration.png" alt="">
-        </div>
+    <div class="lg:flex lg:justify-start text-justify">
+      <div class="mb-8 lg:w-364 lg:mr-10 xl:w-607">
+        <h3 class="font-medium text-xl mb-4">GOAL</h3>
+        <p class="mb-6">Many Nigerians would love to try out Nigerian dishes if ingredients can be provided, thereby
+          minimizing restaurant cost and enjoying a nice cooking time with family.</p>
       </div>
-      <div class="font-medium  lg:flex justify-center">
-        <div>
-          <div class="flex items-center mb-6"><img class="mr-6" src="images/Arrow 1.png" alt=""><span> How might a SAAS
-            help shoppers relieve and recover from shopping experience?</span></div>
-        <div class="flex items-center mb-6"><img class="mr-6" src="images/Arrow 1.png" alt=""><span>How might the
-            ability to track an order encourage users to shop more?</span> </div>
-        <div class="flex items-center mb-6"><img class="mr-6" src="images/Arrow 1.png" alt=""><span>How might being able
-            to schedule delivery at convenience make customers return?</span> </div>
+      <div class="lg:w-364 xl:w-607">
+        <h3 class="font-medium text-xl  mb-4">COMPETITORS</h3>
+        <p class="">There are many food delivery app available to make full meal orders, most of them do not sell
+          pre-packed ingredients kits. This is a new concept in Nigeria, and this app will have little or no
+          competitors.</p>
       </div>
-        </div>
-        
+    </div>
+  </div>
+
+
+  <div class="mx-6 lg:mx-28">
+
+    <div class=" mb-20 lg:mb-52 tag">
+      <h2 class="font-bold text-3xl mb-6">RESEARCH</h2>
+      <span>Online statistics shows Nigerians cooking and eating habits.</span>
+      <div class="mt-8 md:flex md:justify-between xl:justify-start">
+        <img class="mb-4 xl:mr-16 md:w-52 lg:w-60" src="images/Frame 1321314849.png" alt="">
+        <img class="mb-4 xl:mr-16 md:w-52 lg:w-60 " src="images/Frame 1321314852.png" alt="">
+        <img class="mb-4 md:w-52 lg:w-60" src="images/Frame 1321314853.png" alt="">
+      </div>
+
     </div>
 
 
 
     <div class="mb-28 lg:mb-52 tag">
-      <h2 class="h4">
-        0.3 The Goal
+      <h2 class="font-bold text-3xl mb-6">
+        USER INTERVIEW
       </h2>
-      <div class="lg:flex">
-        <div class="mb-14">
-
-          <p class="">
-            The Grabby project tends to address the <span class="thick">above problem statement</span> by properly
-            categorising these products and also <span class="thick"> offering logistics services to the comfort of
-              shoppers locations</span> for easier and better experience, thereby leaving customers/shoppers <span
-              class="thick">satisfied after a shopping experience.</span>
-          </p>
+      <span>I conducted a user interview on 3 food lovers who love to cook at home. The interview was to help me
+        discover their pain points and opportunities in making Nigerian dishes.</span>
+      <div class="mt-12 md:flex md:justify-between">
+        <div class="text-center w-48 mx-auto mb-1">
+          <span class="block font-semibold text-2xl">A</span>
+          <span>You don’t just find these recipes online.</span>
         </div>
-        <div class="goal-img"><img src="images/The goal illustration.png" alt=""></div>
+        <div class="text-center w-56 mx-auto mb-4">
+          <span class="block font-semibold text-2xl">B</span>
+          <span>Not measured accordingly for quantity of people consuming.</span>
+        </div>
+        <div class="text-center w-56 mx-auto">
+          <span class="block font-semibold text-2xl">C</span>
+          <span>Not measured accordingly for quantity of people consuming.</span>
+        </div>
       </div>
     </div>
 
@@ -188,35 +145,15 @@
 
 
 
-    <div class="mb-28 lg:mb-52 tag">
-      <h2 class="h4">
-        0.4 User Research
+    <div class="mb-20 lg:mb-52 tag">
+      <h2 class="font-bold text-3xl mb-6">
+        USER PERSONA
       </h2>
-      <div class="lg:flex lg:justify-between">
-        <div class="mb-14">
-          <img class="lg:w-96 xl:w-545" src="images/user research illustration.png" alt="">
-        </div>
-        <div class="lg:w-484 xl:w-545">
-          <div class="flex mb-3  items-center"><img class='mr-3 ' src="images/Arrow.png" alt=""><span><span
-                class="pink">22</span> interviews</span></div>
-          <div class="flex  mb-3 items-center"><img class='mr-3 ' src="images/Arrow.png" alt=""><span><span
-                class="pink">15 </span> interviews valid survey responses</span></div>
-          <div class="flex mb-5 items-center"><img class='mr-3' src="images/Arrow.png" alt=""><span><span
-                class="pink">7</span> one-on-one interviews</span></div>
-
-          <p class="mb-5">It is important that users are satisfied after shopping a product/service. From interviews
-            carried out, users are not completely satisfied after shopping due to:</p>
-
-          <div class="">
-            <div class="flex items-center mb-5"><img class="mr-3" src="images/Ellipse 191.png" alt="bullet"> <span
-                class="">unavailability when product arrives due to schedule conflict</span></div>
-            <div class="flex items-center mb-5"><img class="mr-3" src="images/Ellipse 191.png" alt="bullet"> <span
-                class="">Inability to track product when shipped out,</span></div>
-            <div class="flex items-center mb-5"><img class="mr-3" src="images/Ellipse 191.png" alt="bullet"> <span
-                class="">Inability to contact delivery agent.</span></div>
-          </div>
-        </div>
-
+      <span>I developed 2 personalities from Barbara and Buchi to understand their pain points and needs. It is
+        important to understand users need which will aid design decisions. </span>
+      <div class="lg:flex lg:justify-between xl:justify-start lg:items-center lg:mt-8">
+        <img class="mt-8 mb-4 lg:m-0 md:w-415 md:mx-auto xl:mr-32" src="images/Frame 1321314896 1.png" alt="">
+        <img class="md:w-415 md:mx-auto lg:m-0" src="images/Frame 1321314897 2.png" alt="">
 
       </div>
 
@@ -224,367 +161,159 @@
 
 
 
-
-
     <div class="mb-28 lg:mb-52 tag">
-      <h2 class="h4 text-center">User persona development</h2>
-
-      <div class="lg:flex lg:justify-between">
-        <div class="mb-8"><img class="lg:w-436 xl:w-545" src="images/User persona Barbara.png" alt=""></div>
-        <div class=""><img class="lg:w-436 xl:w-545" src="images/User persona Charles.png" alt=""></div>
-      </div>
-
-    </div>
-
-
-    <div class="mb-28 lg:mb-52 tag">
-      <h2 class="h4">0.5 Competitive Analysis</h2>
-      <div class="text-center lg:flex lg:justify-start">
+      <h2 class="h4">COMPETITORS ANALYSIS</h2>
+      <span>I concluded a competitor analysis on the existing market to understand what they offer and come up with
+        opportunities.</span>
+      <div class=" mt-8 text-center lg:flex lg:justify-start lg:items-center">
         <div class="w-konga-jumia mx-auto lg:mx-0 mb-8 lg:mr-72">
           <img src="images/Jumia logo.png" alt="jumia">
-          <p class="comp-p">Products are categorized but does not offer scheduled delivery.</p>
+          <p class="comp-p">Includes all types of cooking ingredients but do not offer prepacked packages for a go-to
+            meal.</p>
         </div>
         <div class="w-konga-jumia mx-auto lg:mx-0">
-          <img src="images/Konga logo.png" alt="konga">
-          <p class="comp-p">Offers various payment method but unable to track shipment or contact delivery agent.</p>
+          <img class="lg:mb-8" src="images/image 225.png" alt="konga">
+          <p class="comp-p">Ability to view/save recipes. Only focused on recipes.
+            Healthy meal plans for diet.
+            Do not offer pre-packaged ingredients kit..</p>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="mb-20 lg:mb-52 tag">
+      <h2 class="font-bold text-3xl mb-6 mx-6 lg:mx-28">
+        SOLUTION
+      </h2>
+      <div class="bg-g2">
+        <span class=" block p-2 lg:pt-20 lg:mb-10 lg:ml-20">From my research and findings, the users will need:</span>
+        <div class="pb-10 lg:flex lg:justify-evenly">
+          <div class="w-64 text-center mx-auto mb-10">
+            <img class="mx-auto" src="images/qrcode.svg.png" alt="">
+            <span>
+              Users can use this to find out recipes from product packages.
+            </span>
+          </div>
+          <div class="w-64 text-center mx-auto">
+            <img class="mx-auto" src="images/community.svg.png" alt="">
+            <span>The community allows users share and connect thoughts on different Nigerian dishes</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="mx-6 lg:mx-28">
+
+    <div class="mb-28 lg:mb-52 tag">
+      <h2 class="font-bold text-3xl mb-6">INFORMATION ARCHITECTURE</h2>
+      <span>Based on conducted user reviews, analysing other models in Nigeria and user persona development. Below is
+        the first draft of the potential product.</span>
+
+      <img class="mt-8" src="images/Frame 1321314898 1.png" alt="">
+
+
     </div>
 
     <div class="mb-28 lg:mb-52 tag">
-      <h2 class="h4 ">
-        0.6 Information Architecture
+      <h2 class="font-bold text-3xl mb-6">
+        WIREFRAMES
       </h2>
-      <div class="lg:flex">
-        <div class="mb-14">
-          <p>Based on conducted user reviews, analyzing top E-commerce models in Nigeria and user persona development.
-            Below is the first draft of our potential product.</p>
-        </div>
-        <div class="info-img">
-          <img src="images/Information Architecture Chart 1.png" alt="information architecture">
-        </div>
+      <span>Below is a skeletal view of the app displaying its unique features.</span>
+      <div class="lg:flex justify-evenly">
+        <img class="w-72 mb-10 mt-10" src="images/Group 26086246.png" alt="">
+        <img class="w-64 mb-10" src="images/Group 26086247.png" alt="">
       </div>
+     <div class="lg:flex justify-evenly">
+      <img class="w-72 mb-10" src="images/Group 26086248.png" alt="">
+      <img class="w-64 mb-10" src="images/Group 26086249.png" alt="">
+     </div>
+     
     </div>
 
-    <div class="mb-28 lg:mb-52 tag">
-      <h2 class="h4">0.7 Wireframes</h2>
-      <div class="lg:flex lg:flex-row-reverse lg:justify-between ">
-        <div class="mb-14 lg:w-484 xl:w-607 xl:text-center">
-          <p>Important insights were obtained from the discovery and exploration stages. Afterwards, we are now able to
-            implement our ideas and create the first prototype of the website. We are also driving towards achieving a
-            clean, modern, and simple design as well as easy navigation and straight-forward structure while maintaining
-            our goal.</p>
-        </div>
-
-        <div class=""><img class="lg:w-96 xl:w-484" src="images/Wireframe.png" alt="wireframe"></div>
-      </div>
 
 
-    </div>
-
-    <div class="mb-28 lg:mb-52 tag">
+    <div class="mb-20 tag">
       <h2 class="h4">
-        0.8 Design Guideline
+        USER FLOW
       </h2>
-      <div class="lg:flex lg:justify-between">
-        <div class="mb-14 lg:w-484 xl:w-607">
-          <p>DM Sans is the only font used through the design. For the sake of development sanity, base REM value is
-            16px which is default for major browsers.
-            DM Sans is selected because of its <span class="thick">simplicity and readability.</span>
-            Pink and Blue are selected as the primary colors based due to <span class="thick">contrast compatibity
-            </span>which defeats any of the other complimentary color combination. Blue and Pink also conveys the <span
-              class="thick">friendly and informative</span> nature Grabby can bring.
-
-          </p>
-        </div>
-        <div class="mb-14">
-          <img class="lg:w-96 xl:w-484" src="images/colors.png" alt="colors">
-        </div>
-      </div>
-      <div class="lg:w-436 lg:ml-36">
-        <img src="images/Typography.png" alt="Typography">
-      </div>
+      <span>This user flow shows the activity flow of Barbara who is trying to upload a picture of her new meal to the
+        community and Buchi trying to scan a recipe in order to get detailed cooking steps. </span>
+      <img class="mt-8 mb-4 lg:w-834" src="images/Frame 1321314900.png" alt="">
+      <img class="lg:w-834" src="images/Frame 1321314901.png" alt="">
     </div>
 
-
-
-    <div class="mb-28 tag">
+    <div class="mb-20">
       <h2 class="h4">
-        0.9 Outcome
+        STYLE GUIDE
       </h2>
-      <div class="lg:flex lg:flex-row-reverse lg:justify-between">
-
-        <div class="mb-14 lg:w-607">
-          <p>
-            The brief was to design a unique and simple website that solves the problem of delay, schedule conflict and
-            frustrations. By following the UX process (researching ideas, sketching, choosing design guidelines,
-            information architecture, creating prototypes and user testing), the idea for a simple and user-friendly was
-            implemented and the goal was achieved.
-          </p>
-        </div>
-
-        <div class="outcome-img">
-          <img class="lg:w-484" src="images/Outcome illustration.png" alt="">
-        </div>
-      </div>
+      <img src="images/Frame 1321314941.png" alt="">
+      <span class="block">Font: Roboto</span>
     </div>
 
-    <div class="">
+    <div class="mb-20">
+      <h2 class="h4">DESIGN</h2>
+      <div class="flex justify-evenly">
+        <img class="w-20" src="images/Filled- Create accountLO 1 (1).png" alt="">
+        <img class="w-20" src="images/Filled- Create account-1 2.png" alt="">
+        <img class="w-20" src="images/Filled- Create account 5.png" alt="">
+        <img class="w-20" src="images/Filled- Create accountggg 1.png" alt="">
+      </div>
+
+
+    </div>
+  </div>
+  <div>
+    <h2 class="h4 mx-6 lg:mx-28">PROTOTYPE</h2>
+    <div>
+      <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="200px" height="450px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4T8rawOvOBjwLjKwpl8ov4%2FGrabby-Prototype%3Fpage-id%3D761%253A67314%26node-id%3D4213%253A62302%26viewport%3D-4986%252C9349%252C0.33%26scaling%3Dmin-zoom%26starting-point-node-id%3D4213%253A62302" allowfullscreen></iframe> -->
+    </div>
+
+  </div>
+  </div>
+
+  <div class="mx-6 lg:mx-28">
+    <div class="mb-14">
       <h2 class="h4">
-        10. Prototype
+        CONCLUSION
       </h2>
-      <div class="lg:flex tag">
+      <span>
+        As regards Grabby in the future, there may be a chance for the app to offer much more than just Nigerian dishes.
+        Nigerians love to eat, so many other ingredients kit and famous recipes could be added.
+      </span>
+    </div>
 
-        <div class="mb-20 lg:w-484">
-          <h3 class="font-semibold mb-6">
-            Onboarding and Authentication
-          </h3>
-          <ul class="list-disc list-outside ml-6">
-            <li class="mb-6">
-              Users will fill in their name, email address, phone number and choose password. They will arrive at the
-              homepage when registration is complete.
-            </li>
-            <li class="">New users will be required to enable location for easy product search. They will have the
-              option to turn location on or off. </li>
-          </ul>
-        </div>
+    <div class="mb-10 lg:mb-28 float-right w-28">
+      <a href="#top">
+        <img class="" src="images/Frame 34400.png" alt="">
+      </a>
 
-        <div class="mx-auto mb-28" style="position:relative ;width:155px;height:350px;"><iframe
-            src="https://player.vimeo.com/video/750356029?h=fcc88b4347&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;muted=1"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:155px;height:350px;" title="ezgif-2-8823bd04e7.mkv"></iframe>
-        </div>
-      </div>
-
-
-
-
-      <div class="lg:flex tag">
-
-        <div class="mx-auto mb-28" style="position:relative ;width:155px;height:350px;"><iframe
-            src="https://player.vimeo.com/video/749715076?h=&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;muted=1"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:155px;height:350px;" title="ezgif-2-8823bd04e7.mkv"></iframe>
-        </div>
-
-
-        <div class="mb-20 lg:w-484">
-          <h3 class="font-semibold mb-6">
-            Homepage
-          </h3>
-          <ul class="list-disc list-outside ml-6">
-            <li class="mb-6">
-              By arriving at the homepage, users will see products displayed by merchants and shows brief details about
-              each item.
-            </li>
-            <li class="mb-6">Users also have a search option for easier product or merchant searches based on
-              Geo-location or broader searches enabled during registration. </li>
-            <li>
-              Users can also access profile, favourites and livechat service using the navigation bar.
-            </li>
-          </ul>
-        </div>
-
-
-
-      </div>
-
-
-
-      <div class="lg:flex tag">
-        <div class="mb-20 lg:w-484">
-          <h3 class="font-semibold mb-6">
-            Ordering process
-          </h3>
-          <ul class="list-disc list-outside ml-6 mb-10">
-            <li class="mb-6">
-              Users are able to view more products options and scan through other merchants products.
-            </li>
-            <li class="">They will choose a prefered category and select their preference accordingly by adding to cart.
-            </li>
-          </ul>
-        </div>
-
-        <div class="mx-auto mb-28" style="position:relative ;width:155px;height:350px;"><iframe
-            src="https://player.vimeo.com/video/749719251?h=&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;muted=1"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:155px;height:350px;" title="ezgif-2-8823bd04e7.mkv"></iframe>
-        </div>
-      </div>
     </div>
 
 
-
-
-    <div class="lg:flex lg:flex-row-reverse tag">
-      <div class="mb-20 lg:w-484">
-        <h3 class="font-semibold mb-6">
-          Reviews
-        </h3>
-        <ul class="list-disc list-outside ml-6 mb-10">
-          <li class="mb-6">
-            Users can read reviews to see feedback on products before or after purchase.
-          </li>
-          <li class="">Users are also able to add a review. </li>
-        </ul>
-      </div>
-
-      <div class="mx-auto mb-28" style="position:relative ;width:155px;height:350px;"><iframe
-          src="https://player.vimeo.com/video/749728196?h=&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;muted=1"
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-          style="position:absolute;top:0;left:0;width:155px;height:350px;" title="ezgif-2-8823bd04e7.mkv"></iframe>
-      </div>
-    </div>
-    </div>
-
-
-    <div class="lg:flex tag">
-      <div class="mb-20 lg:w-484">
-        <h3 class="font-semibold mb-6">
-          Schedule Order & Checkout
-        </h3>
-        <ul class="list-disc list-outside ml-6 mb-10">
-          <li class="mb-6">
-            After selecting a product of choice, users can proceed to order confirmation from merchant by scheduling
-            same day delivery (Home or pick-up) or delivery at convenience where they select date and time of choice.
-          </li>
-          <li class="">Users can also drop a direct note to the dispatch agent for better address clarification or
-            further details. </li>
-        </ul>
-      </div>
-
-      <div class="mx-auto mb-28" style="position:relative ;width:155px;height:350px;"><iframe
-          src="https://player.vimeo.com/video/749722892?h=&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;muted=1"
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-          style="position:absolute;top:0;left:0;width:155px;height:350px;" title="ezgif-2-8823bd04e7.mkv"></iframe>
-      </div>
-    </div>
-    </div>
-
-
-    <div class="lg:flex lg:flex-row-reverse tag">
-      <div class="mb-20 lg:w-484">
-        <h3 class="font-semibold mb-6">
-          Order Tracking
-        </h3>
-        <ul class="list-disc list-outside ml-6 mb-10">
-          <li class="">
-            Users can track their order delivery in real time and make direct contact with the delivery agent once order
-            has been confirmed.
-          </li>
-        </ul>
-      </div>
-
-      <div class="mx-auto mb-28" style="position:relative ;width:155px;height:350px;"><iframe
-          src="https://player.vimeo.com/video/749725949?h=&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;muted=1"
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-          style="position:absolute;top:0;left:0;width:155px;height:350px;" title="ezgif-2-8823bd04e7.mkv"></iframe>
-      </div>
-    </div>
-    </div>
-
-
-    <div class="lg:flex tag">
-      <div class="mb-20 lg:w-484">
-        <h3 class="font-semibold mb-6">
-          Profile
-        </h3>
-        <ul class="list-disc list-outside ml-6 mb-10">
-          <li class="mb-6">
-            Users are able to view cart, order history, see notifications, view favourite items saved, see available
-            coupons, make a review and read through reviews.
-          </li>
-          <li class="">They are also able to edit profle and make possible changes when and where required. </li>
-        </ul>
-      </div>
-
-      <div class="mx-auto mb-28" style="position:relative ;width:155px;height:350px;"><iframe
-          src="https://player.vimeo.com/video/749731703?h=&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;muted=1"
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-          style="position:absolute;top:0;left:0;width:155px;height:350px;" title="ezgif-2-8823bd04e7.mkv"></iframe>
-      </div>
-    </div>
-    </div>
-
-
-    <div class="lg:flex lg:flex-row-reverse tag">
-      <div class="mb-20 lg:w-484">
-        <h3 class="font-semibold mb-6">
-          Biometrics and Pin
-        </h3>
-        <ul class="list-disc list-outside ml-6 mb-10">
-          <li class="mb-6">
-            Users can reset password in-app via settings or in a case of ‘’forgot password’’
-          </li>
-          <li class="">An OTP is sent to the users email address and they can login with new details. </li>
-        </ul>
-      </div>
-      <div class="mx-auto mb-28" style="position:relative ;width:155px;height:350px;"><iframe
-          src="https://player.vimeo.com/video/749731703?h=&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;title=0&amp;muted=1"
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-          style="position:absolute;top:0;left:0;width:155px;height:350px;" title="ezgif-2-8823bd04e7.mkv"></iframe>
-      </div>
-    </div>
-    </div>
-
-    <div class="tag">
-      <h2 class="h4">11.Iterations</h2>
-
-      <div class="mb-28 lg:flex lg:justify-between">
-        <div class="mb-16 lg:w-484 xl:w-607">
-          <p>We recruited 5 participants from the slack community to conduct remote moderated usability testing on the
-            designs. During the test, we asked them to complete a series of tasks that helped us to understand their
-            thought process and see if they could accoumplish the goal of the project. This was also the perfect time to
-            ask about how they feel about the prototype.</p>
-        </div>
-        <div class="lg:w-96 xl:w-484">
-          <img class="mb-10" src="images/Iteration 1.png" alt="iteration1">
-          <p>After usability testing, we discovered that having the form field in the top part of the page instead of
-            the social sign up options, helped the users to access the social sign up options in the solution with ease.
-            The options are retained of course, but as a secondary option.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="mb-28 lg:flex  lg:items-center lg:justify-between">
-        <div class="mb-10"><img class="lg:w-545" src="images/Iteration 2.png" alt=""></div>
-        <div class="lg:w-545">
-          <p>After usability testing, we discovered the need to provide the dispatch rider’s contact information.
-            This will enable easier location of package drop off point and collection of package upon the rider’s
-            arrival.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="mb-28 tag">
-      <h2 class="h4">12.Takeaways</h2>
-      <ul class="list-disc list-outside ml-6">
-        <li class="mb-4">Relying on users feedback.</li>
-        <li class="mb-4">Simple and easy to navigate app.</li>
-        <li class="mb-4">Clear Description.</li>
-        <li>Settling for one design concept after UX process.</li>
-      </ul>
-    </div>
-
-    <div class="flex justify-between mb-28">
+    <div class="flex justify-between mb-28 clear-right">
       <a href="bytsfy.html" class="flex items-center justify-between"><img class=" mr-1 lg:mr-4 w-6 md:w-full"
           src="images/Arrow 7 (1).png" alt="back arrow">
         <span class="font-medium lg:text-3xl">Bytsfy</span>
       </a>
 
-        <a class="flex items-center justify-between" href="ronda.html">
-          <span class="font-medium lg:text-3xl">Ronda</span>
-          <img class=" ml-1 lg:ml-4 w-6 md:w-full" src="images/Arrow 7.png" alt="forward arrow">
-        </a>
-         
-    </div>
-  </main>
-  <footer class="flex justify-between mb-9 font-semibold mx-6 lg:mx-10 xl:mx-28 lg:text-3xl">
-    <div class=""><span> hello@likita.dev </span></div>
-    <div class="flex  items-center">
+      <a class="flex items-center justify-between" href="ronda.html">
+        <span class="font-medium lg:text-3xl">Ronda</span>
+        <img class=" ml-1 lg:ml-4 w-6 md:w-full" src="images/Arrow 7.png" alt="forward arrow">
+      </a>
 
-      <img class="w-5 h-5 mr-2" src="img/copyright.png" alt="copyright" /> <span class=""> 2022 Likita Ruth</span>
+    </div>
+  </div>
+  <footer class=" w-342 text-center mb-10  mx-auto">
+    <div>
+      <span class="block mb-3">Copyright Likita Ruth 2022</span>
+      <a href="mailto:ruthlikita350@gmail.com" class="block mb-2 font-medium">
+        Email
+      </a>
+      <a href="https://www.linkedin.com/in/ruthlikita" target="_blank" class="block font-medium">
+        LinkedIn
+      </a>
     </div>
   </footer>
 
