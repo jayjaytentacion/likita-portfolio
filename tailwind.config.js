@@ -32,6 +32,8 @@ module.exports = {
       ronda_hero: '#8D0CCA1A',
       grab: '#EFB94D33',
       by_hero: '#E3F2FE80',
+      bypy: '#00C2FF1A',
+
 
       secondary: {
         100: '#E2E2D5',
