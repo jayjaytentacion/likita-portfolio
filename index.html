@@ -1,209 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Likita Ruth</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <style>
-    /* *{
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likita Ruth</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* *{
             border: 1px solid rosybrown;
         } */
-    .tag {
-      opacity: 0;
-      transform: matrix(1, 0, 0, 1, 0, 0);
-      transition: opacity 800ms cubic-bezier(.4, 0, .2, 1), transform 800ms cubic-bezier(.4, 0, .2, 1);
-      /* transform: translate(0, 10vh);
+      .tag {
+        opacity: 0;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1),
+          transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+        /* transform: translate(0, 10vh);
   transition: all 1s; */
-    }
+      }
 
-    .tag.visible {
-      opacity: 1;
-      /* transform: translate(0, 0); */
-      /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      .tag.visible {
+        opacity: 1;
+        /* transform: translate(0, 0); */
+        /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     transition-duration: 0.65s;
     transition-delay: 0.0434783s; */
+      }
+    </style>
+  </head>
 
-    }
-  </style>
-</head>
+  <body class="font-body leading-30 bg-bg_col">
+    <div class="shadow-new">
+      <nav
+        class="border-gray-200 mx-6 lg:mx-28 pt-4 lg:pt-12 rounded dark:bg-gray-900"
+      >
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-center">
+          <h1 class="">
+            <a href="/"><img src="images/logo.png" class="w-8" alt="" /></a>
+          </h1>
+          <button
+            id="burger"
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center px-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="menu">
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:items-center md:mt-0 md:text-sm md:border-0 md:bg-bg_col"
+            >
+              <li class="flex justify-end">
+                <a
+                  href="/"
+                  class="my-2 md:ml-4 md:my-0 lg:ml-6 border-b border-black"
+                  >Projects</a
+                >
+              </li>
+              <li class="flex justify-end">
+                <a href="about.html" class="mb-2 md:ml-4 md:my-0 lg:ml-6"
+                  >About</a
+                >
+              </li>
+              <li class="flex justify-end">
+                <a
+                  href="mailto:ruthlikita530@gmail.com"
+                  class="md:ml-4 md:my-0 lg:ml-6"
+                  >Email</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-<body class="font-body leading-30 bg-bg_col ">
-  <div class="shadow-new">
+      <!-- <div class="border-b border-gray-200 mt-2"></div> -->
 
+      <div
+        class="ml-20 sm:mx-auto sm:w-80 lg:w-700 md:mx-auto text-web_black pb-16"
+      >
+        <div class="max-w-1440 mx-auto">
+          <div
+            class="flex items-center mt-11 lg:mt-16 lg:w-56 relative lg:mb-2"
+          >
+            <img
+              class="w-10 lg:w-12 -left-12 lg:-left-14 rounded-full absolute"
+              src="/images/269653_f8294923a5304079bed95d039fa9a193_mv2.gif.gif"
+              alt=""
+            />
+            <span class="lg:text-xl lg:ml-4">I'm Likita, a girl</span>
+          </div>
 
-    <nav class=" border-gray-200  mx-6 lg:mx-28  pt-4 lg:pt-12  rounded dark:bg-gray-900">
-      <div class=" flex flex-wrap md:flex-nowrap justify-between items-center ">
-        <h1 class=""><a href="/"><img src="images/logo.png" class="w-8" alt=""></a></h1>
-        <button id="burger" data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center px-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="menu">
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:items-center md:mt-0 md:text-sm md:border-0 md:bg-bg_col ">
-            <li class="flex justify-end">
-              <a href="/" class="my-2  md:ml-4 md:my-0 lg:ml-6 border-b border-black ">Projects</a>
-            </li>
-            <li class="flex justify-end">
-              <a href="about.html" class="mb-2 md:ml-4 md:my-0 lg:ml-6 ">About</a>
-            </li>
-            <li class="flex justify-end">
-              <a href="mailto:ruthlikita530@gmail.com" class="md:ml-4 md:my-0 lg:ml-6">Email</a>
-            </li>
-
-          </ul>
+          <div class="lg:ml-4">
+            <span class="font-semibold text-2xl pr-4 lg:text-4xl block"
+              >who designs personable interfaces that makes room for a fulfilled
+              user experience.</span
+            >
+          </div>
         </div>
       </div>
-    </nav>
-
-    <!-- <div class="border-b border-gray-200 mt-2"></div> -->
-
-
-
-
-    <div class="ml-20 sm:mx-auto sm:w-80 lg:w-700 md:mx-auto text-web_black pb-16 ">
-      <div class="max-w-1440 mx-auto">
-        <div class=" flex items-center mt-11 lg:mt-16  lg:w-56 relative lg:mb-2 ">
-          <img class="w-10 lg:w-12 -left-12 lg:-left-14 rounded-full absolute"
-            src="/images/269653_f8294923a5304079bed95d039fa9a193_mv2.gif.gif" alt="">
-          <span class="lg:text-xl lg:ml-4">I’m Likita, a girl</span>
-        </div>
-
-        <div class="lg:ml-4">
-          <span class="font-semibold text-2xl pr-4 lg:text-4xl block ">who designs personable interfaces that makes room
-            for a
-            fulfilled user experience.</span>
-        </div>
-      </div>
-
-
     </div>
-  </div>
-  <main class="mx-6 lg:mx-28">
-    <div class="">
-      <!-- cards -->
-      <!-- card 1-->
-      <div class="mt-28 flex  flex-col lg:flex-row lg:justify-between xl:justify-evenly">
-        <div class="mb-16">
-          <img class="mx-auto lg:mx-0 sm:w-72" src="images/Group 26086264 (1).png" alt="">
-        </div>
-        <div class="relative md:w-442 md:mx-auto lg:mx-0">
-          <h2 class="text-ticked font-semibold text-3xl mb-2 ">Ticked</h2>
-          <h3 class="mb-6 font-normal text-web_black">UX Casestudy</h3>
-          <p class="mb-10 text-web_black">This To-do list app will have users create a task and ensure the task is
-            completed with the help of a Virtual Assistant.</p>
-          <div class="border-b-2 border-ticked w-36 flex items-center justify-between "><a href="ticked.html"
-              class=" font-medium text-ticked ">Create a task</a> <img class="" src="images/arrow_right_alt (1).png"
-              alt=""></div>
-          <!-- <div class="border-b border-mr"></div> -->
-          <div class="absolute bottom-24 lg:-top-10 lg:right-10">
-            <img src="images/01 (1).png" alt="">
+    <main class="mx-6 lg:mx-28">
+      <div class="">
+        <!-- cards -->
+        <!-- card 1-->
+        <div
+          class="mt-28 flex flex-col lg:flex-row lg:justify-between xl:justify-evenly"
+        >
+          <div class="mb-16">
+            <img
+              class="mx-auto lg:mx-0 sm:w-72"
+              src="images/Group 26086264 (1).png"
+              alt=""
+            />
+          </div>
+          <div class="relative md:w-442 md:mx-auto lg:mx-0">
+            <h2 class="text-ticked font-semibold text-3xl mb-2">TripDoodler</h2>
+            <h3 class="mb-6 font-normal text-web_black">UX Casestudy</h3>
+            <p class="mb-10 text-web_black">
+              This To-do list app will have users create a task and ensure the
+              task is completed with the help of a Virtual Assistant.
+            </p>
+            <div
+              class="border-b-2 border-ticked w-36 flex items-center justify-between"
+            >
+              <a href="tripdoodler.html" class="font-medium text-ticked"
+                >Create a task</a
+              >
+              <img class="" src="images/arrow_right_alt (1).png" alt="" />
+            </div>
+            <div class="absolute bottom-24 lg:-top-10 lg:right-10">
+              <img src="images/01 (1).png" alt="" />
+            </div>
           </div>
         </div>
 
-      </div>
-
-
-
-      <!-- card 2-->
-      <div class="mt-28 flex  flex-col lg:flex-row-reverse lg:justify-between xl:justify-evenly">
-        <div class="mb-16">
-          <img class="mx-auto lg:mx-0 sm:w-64" src="images/Group 26086195 (1).png" alt="">
-        </div>
-        <div class="relative  md:w-436  md:mx-auto lg:mx-0">
-          <h2 class="text-grabby font-semibold text-3xl mb-2 ">Grabby</h2>
-          <h3 class="mb-6 font-normal text-web_black">UX Casestudy</h3>
-          <p class="mb-10 text-web_black">A recipe app that serves as a guide to a well nourishing meal. This app will
-            provide step to step procedure on how to make any meal of choice.</p>
-          <div class="border-b-2 border-grabby w-32 flex items-center justify-between "><a href="grabby.html"
-              class=" font-medium text-grabby ">Cook a Meal</a> <img class="" src="images/arrow_right_alt (3).png"
-              alt=""></div>
-          <!-- <div class="border-b border-mr"></div> -->
-          <div class="absolute bottom-32 lg:-top-10 lg:right-10">
-            <img src="images/02 (1).png" alt="">
+        <!-- card 2-->
+        <div
+          class="mt-28 flex flex-col lg:flex-row-reverse lg:justify-between xl:justify-evenly"
+        >
+          <div class="mb-16">
+            <img
+              class="mx-auto lg:mx-0 sm:w-64"
+              src="images/Group 26086195 (1).png"
+              alt=""
+            />
+          </div>
+          <div class="relative md:w-436 md:mx-auto lg:mx-0">
+            <h2 class="text-grabby font-semibold text-3xl mb-2">
+              Activepieces (YC S22)
+            </h2>
+            <h3 class="mb-6 font-normal text-web_black">UX Casestudy</h3>
+            <p class="mb-10 text-web_black">
+              A recipe app that serves as a guide to a well nourishing meal.
+              This app will provide step to step procedure on how to make any
+              meal of choice.
+            </p>
+            <div
+              class="border-b-2 border-grabby w-32 flex items-center justify-between"
+            >
+              <a href="grabby.html" class="font-medium text-grabby"
+                >Cook a Meal</a
+              >
+              <img class="" src="images/arrow_right_alt (3).png" alt="" />
+            </div>
+            <div class="absolute bottom-32 lg:-top-10 lg:-right-24">
+              <img src="images/02 (1).png" alt="" />
+            </div>
           </div>
         </div>
 
+        <!-- card 3-->
+        <div
+          class="mt-28 flex flex-col lg:flex-row lg:justify-between xl:justify-evenly"
+        >
+          <div class="mb-16">
+            <img
+              class="mx-auto lg:mx-0 sm:w-72"
+              src="images/Group 26086194 (1).png"
+              alt=""
+            />
+          </div>
+          <div class="relative md:w-442 md:mx-auto lg:mx-0">
+            <h2 class="text-byt font-semibold text-3xl mb-2">PetMe</h2>
+            <h3 class="mb-6 font-normal text-web_black">UX Casestudy</h3>
+            <p class="mb-10 text-web_black">
+              A Chunk website. An app that enables users split
+              <br class="hidden md:block" />
+              between CSV or JSON files. These files can be saved
+              <br class="hidden md:block" />
+              to users account or downloaded to computer.
+            </p>
+            <div
+              class="border-b-2 border-byt w-28 flex items-center justify-between"
+            >
+              <a href="bytsfy.html" class="font-medium text-byt"
+                >Split a file</a
+              >
+              <img class="" src="images/arrow_right_alt (4).png" alt="" />
+            </div>
+            <div class="absolute bottom-32 lg:-top-10 lg:right-10">
+              <img src="images/03.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- card 3-->
-      <div class="mt-28 flex  flex-col lg:flex-row lg:justify-between xl:justify-evenly">
+      <!--card 4-->
+      <div
+        class="mt-28 flex flex-col lg:flex-row-reverse lg:justify-between xl:justify-evenly mb-40 md:mb-32"
+      >
         <div class="mb-16">
-          <img class="mx-auto lg:mx-0 sm:w-72" src="images/Group 26086194 (1).png" alt="">
+          <img
+            class="mx-auto lg:mx-0 sm:w-56"
+            src="images/Group 26086193.png"
+            alt=""
+          />
         </div>
         <div class="relative md:w-442 md:mx-auto lg:mx-0">
-          <h2 class="text-byt font-semibold text-3xl mb-2 ">Bytsfy</h2>
+          <h2 class="text-ronda font-semibold text-3xl mb-2">Ronda</h2>
           <h3 class="mb-6 font-normal text-web_black">UX Casestudy</h3>
-          <p class="mb-10 text-web_black">A Chunk website. An app that enables users split
-            <br class="hidden md:block">
-            between CSV or JSON files. These files can be saved
-            <br class="hidden md:block">
-            to users account or downloaded to computer.
+          <p class="mb-10 text-web_black">
+            A Fintech solution. An app that offers disposable virtual card for
+            swift online transaction and enable users deposit cheques from their
+            homes.
           </p>
-          <div class="border-b-2 border-byt w-28 flex items-center justify-between "><a href="bytsfy.html"
-              class=" font-medium text-byt ">Split a file</a> <img class="" src="images/arrow_right_alt (4).png" alt="">
+          <div
+            class="border-b-2 border-ronda w-40 flex items-center justify-between"
+          >
+            <a href="ronda.html" class="font-medium text-ronda"
+              >Cash a cheque</a
+            >
+            <img class="" src="images/arrow_right_alt (5).png" alt="" />
           </div>
-          <!-- <div class="border-b border-mr"></div> -->
           <div class="absolute bottom-32 lg:-top-10 lg:right-10">
-            <img src="images/03.png" alt="">
+            <img src="images/04 (1).png" alt="" />
           </div>
         </div>
-
       </div>
-
-
-
-    </div>
-    <!--card 4-->
-    <div class="mt-28 flex  flex-col lg:flex-row-reverse lg:justify-between xl:justify-evenly mb-40 md:mb-32">
-      <div class="mb-16">
-        <img class="mx-auto lg:mx-0 sm:w-56" src="images/Group 26086193.png" alt="">
-      </div>
-      <div class="relative md:w-442 md:mx-auto lg:mx-0">
-        <h2 class="text-ronda font-semibold text-3xl mb-2 ">Ronda</h2>
-        <h3 class="mb-6 font-normal text-web_black">UX Casestudy</h3>
-        <p class="mb-10 text-web_black">
-          A Fintech solution. An app that offers disposable virtual card for swift online transaction and enable users deposit cheques from their homes.
-        </p>
-        <div class="border-b-2 border-ronda w-40 flex items-center justify-between "><a href="ronda.html"
-            class=" font-medium text-ronda ">Cash a cheque</a> <img class="" src="images/arrow_right_alt (5).png"
-            alt=""></div>
-        <!-- <div class="border-b border-mr"></div> -->
-        <div class="absolute bottom-32 lg:-top-10 lg:right-10">
-          <img src="images/04 (1).png" alt="">
-        </div>
-      </div>
-
-    </div>
-
-
-  </main>
-  <footer class=" w-342 text-center mb-5  mx-auto">
+    </main>
+    <footer class="w-342 text-center mb-5 mx-auto">
       <span class="block mb-3">Copyright Likita Ruth 2022</span>
-      <a    href="mailto:ruthlikita530@gmail.com" class="font-medium block mb-2">
+      <a href="mailto:ruthlikita530@gmail.com" class="font-medium block mb-2">
         Email
       </a>
-      <a href="https://www.linkedin.com/in/ruthlikita" target="_blank" class="block font-medium">
+      <a
+        href="https://www.linkedin.com/in/ruthlikita"
+        target="_blank"
+        class="block font-medium"
+      >
         LinkedIn
       </a>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="index.js"></script>
-  <script></script>
-</body>
-
+    <script src="index.js"></script>
+    <script></script>
+  </body>
 </html>
