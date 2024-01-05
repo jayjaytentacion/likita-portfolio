@@ -30,18 +30,27 @@
         font-size: 20rem;
       }
     }
+    @media (min-width: 768px) {
+      .year-text {
+        font-size: 15rem;
+      }
+    }
   </style>
 
   <body
     class="font-body leading-30 px-6 lg:px-16 xl:px-28 py-16"
     style="background-color: #5b6414"
   >
-    <nav>
-      <img src="" alt="" />
+    <nav
+      class="flex items-center justify-center mb-10 lg:mb-5 lg:items-start lg:justify-start"
+    >
+      <a href="/">
+        <img src="img/logo.png" alt="" />
+      </a>
     </nav>
     <div class="">
       <div
-        class="flex flex-col lg:flex-row gap-10 lg:gap-24"
+        class="flex flex-col xl:flex-row gap-10 lg:gap-24"
         style="
           font-size: 24px;
           font-weight: 500;
@@ -54,7 +63,7 @@
         <img
           src="img/TripDoodler1.png"
           alt="TripDoodler"
-          class="w-full lg:w-1/3"
+          class="w-full xl:w-1/3"
         />
         <div class="">
           <p class="mb-4 text-lg lg:text-2xl" style="font-weight: 500">
@@ -63,32 +72,38 @@
             doloribus impedit pariatur, maiores, voluptatum obcaecati esse
             maxime odio harum veniam dolor?
           </p>
-          <div class="flex">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             <p class="border w-max px-5 rounded-full" style="font-size: 18px">
-              Product Design
+              Virtual Design
             </p>
             <p class="border w-max px-5 rounded-full" style="font-size: 18px">
-              Design System
+              Responsive Web
+            </p>
+            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+              Sustainability
+            </p>
+            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+              Web Design
             </p>
           </div>
         </div>
       </div>
       <p
         style="font-weight: 800; line-height: 100px; color: white"
-        class="mt-6 text-5xl lg:text-8xl -mb-4 lg:mb-14"
+        class="mt-6 text-5xl md:text-7xl lg:text-8xl -mb-6 md:mb-4 lg:mb-5"
       >
         TRIPDOODLER
       </p>
       <p
         style="font-weight: 400; line-height: 100px; color: white; opacity: 20%"
-        class="mb-16 lg:mb-40 year-text"
+        class="mb-16 md:mb-28 lg:mb-40 year-text"
       >
         2023
       </p>
     </div>
 
     <div
-      class="flex flex-col items-start lg:items-start lg:flex-row gap-10 mb-48"
+      class="flex flex-col items-start lg:items-start lg:flex-row gap-10 mb-24 xl:mb-48"
     >
       <div class="w-full lg:w-1/3 flex flex-col text-white">
         <p
