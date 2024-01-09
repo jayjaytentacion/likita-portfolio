@@ -1,33 +1,29 @@
 const burger = document.querySelector('#burger');
 const menu = document.querySelector('#menu');
+const date = document.getElementById('#date');
 
-if (burger !== null)
-{
+if (burger !== null) {
   burger.addEventListener('click', (e) => {
     if (menu.classList.contains('hidden')) {
       menu.classList.remove('hidden');
     } else {
       menu.classList.add('hidden');
     }
-  })
-
+  });
 }
 
-
-
-
-$(document).on( "scroll", function() {
+$(document).on('scroll', function () {
   var pageTop = $(document).scrollTop();
   var pageBottom = pageTop + $(window).height();
-  var tags = $(".tag");
+  var tags = $('.tag');
 
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
 
     if ($(tag).position().top < pageBottom) {
-      $(tag).addClass("visible");
+      $(tag).addClass('visible');
     } else {
-      $(tag).removeClass("visible");
+      $(tag).removeClass('visible');
     }
   }
 });
