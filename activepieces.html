@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likita Ruth - TripDoodler</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    body {
+      background-color: #5b6414;
+      font-family: 'Unbounded', sans-serif;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 5rem;
+    }
+    .year-text {
+      font-size: 10rem;
+    }
+    .results-number {
+      font-size: 4.5rem;
+    }
+    .results-text {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 1024px) {
+      .year-text {
+        font-size: 20rem;
+      }
+      .results-number {
+        font-size: 115px;
+      }
+      .results-text {
+        font-size: 28px;
+      }
+    }
+    @media (min-width: 768px) {
+      .year-text {
+        font-size: 15rem;
+      }
+    }
+  </style>
+
+  <body class="font-body leading-30 px-6 lg:px-16 xl:px-48 py-6 xl:py-12">
+    <nav class="flex mb-10 lg:mb-5 items-start justify-start">
+      <a href="/">
+        <img src="img/logo.png" alt="" />
+      </a>
+    </nav>
+    <div class="">
+      <div
+        class="flex flex-col xl:flex-row gap-10 lg:gap-24"
+        style="
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 32px;
+          letter-spacing: 0.5%;
+          color: white;
+          text-transform: uppercase;
+        "
+      >
+        <img
+          src="img/activepieces1.jpg"
+          alt="activepieces1"
+          class="w-full xl:w-1/3"
+        />
+        <div class="">
+          <p class="mb-4 text-lg lg:text-2xl" style="font-weight: 500">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            eius quam enim cum doloremque illum consequuntur laudantium error
+            doloribus impedit pariatur, maiores, voluptatum obcaecati esse
+            maxime odio harum veniam dolor?
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+              Virtual Design
+            </p>
+            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+              Product Design
+            </p>
+            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+              Website
+            </p>
+            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+              Material Design
+            </p>
+            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+              Design System
+            </p>
+          </div>
+        </div>
+      </div>
+      <p
+        style="font-weight: 800; line-height: 100px; color: white"
+        class="mt-6 text-5xl md:text-7xl lg:text-8xl -mb-6 md:mb-4 lg:mb-5"
+      >
+        ACTIVEPIECES (YC S22)
+      </p>
+      <p
+        style="font-weight: 400; line-height: 100px; color: white; opacity: 20%"
+        class="mb-16 md:mb-28 lg:mb-40 year-text"
+      >
+        2023
+      </p>
+    </div>
+
+    <div
+      class="flex flex-col items-start lg:items-start lg:flex-row gap-10 mb-24 xl:mb-48"
+    >
+      <div class="w-full lg:w-1/3 flex flex-col text-white">
+        <p
+          style="
+            font-weight: 800;
+            size: 16px;
+            line-height: 16px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+          "
+        >
+          Project Overview
+        </p>
+        <p
+          style="
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.5%;
+          "
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          excepturi delectus veniam quibusdam saepe architecto cupiditate
+          magnam, labore dignissimos eveniet commodi nostrum nemo possimus
+          iusto, voluptate at minima eligendi aliquam?
+        </p>
+      </div>
+      <div
+        class="w-full lg:w-1/3 flex flex-col text-white lg:text-center text-start"
+      >
+        <p
+          style="
+            font-weight: 800;
+            size: 16px;
+            line-height: 16px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+          "
+        >
+          Timeframe
+        </p>
+        <p
+          style="
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.5%;
+          "
+        >
+          2 Months
+        </p>
+      </div>
+      <!-- work on this -->
+      <div class="w-full lg:w-1/3 text-white text-start lg:text-right">
+        <p
+          style="
+            font-weight: 800;
+            size: 16px;
+            line-height: 16px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+          "
+        >
+          Industry
+        </p>
+        <p
+          style="
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.5%;
+          "
+        >
+          Sustainable Travel
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="mb-24 px-0">
+        <p class="text-3xl text-white font-bold mb-6">Activepieces</p>
+        <p class="text-white mb-14">
+          Activepieces is an online no-code automation tool that connects your
+          favorite apps, such as Gmail, Slack, Discord, and more. It allows you
+          to automate repetitive tasks by creating workflows, called “Pieces”. A
+          Piece connects two or more apps to automate part of your business or
+          personal tasks without any coding or technical knowledge. This tool is
+          used to streamline workflows and increase productivity by automating
+          various processes. <br />
+          <br />
+          During my time at Activepieces as a Product Designer I had the
+          opportunity to contribute to the design projects aimed at improving
+          user experiences. I worked closely with the Founder and Senior
+          Designer to make complex processes more straightforward and ensure an
+          integration, for our users. By following user centered design
+          principles and implementing Material Design System Kit it fostered
+          communication between designers and developers. One of my
+          responsibilities was designing appealing interfaces for essential
+          features such as the builder and dashboard which greatly contributed
+          to Activepieces mission of simplifying automation, for users
+          worldwide.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="mb-10 text-white">
+        <p class="text-3xl font-bold mb-6">Redesigning Features</p>
+        <p class="mb-4 font-extrabold">The Builder</p>
+        <p>
+          The redesign of the Builder interface focused on creating a more
+          intuitive and user-friendly experience. By simplifying the layout and
+          incorporating clear visual cues, users can easily navigate through the
+          workflow creation process. The improved design streamlines the
+          selection of triggers and actions, making it easier for users to
+          automate their tasks without any complications.
+        </p>
+        <img
+          src="img/rf-activepieces.png"
+          alt="activepieces1"
+          width="1500px"
+          class="mt-14 mb-14"
+        />
+        <p class="mb-4 font-extrabold">Select Trigger</p>
+        <p>
+          The "Select Trigger" function has been improved to make it simpler and
+          more accurate. Users can now easily identify trigger events using a
+          search and filter system, ensuring a more precise selection. Clear
+          explanations and visual cues have been added to help users understand
+          the process intuitively. Real-time feedback during trigger selection
+          boosts user confidence. With this user-friendly experience, the
+          "Select Trigger" feature speeds up workflow creation, allowing users
+          to effortlessly integrate apps and focus on their tasks without any
+          complications.
+        </p>
+        <img
+          src="img/st-acivepieces.png"
+          alt="activepieces1"
+          width="1500px"
+          class="mt-14 mb-14"
+        />
+        <p class="mb-4 font-extrabold">Side Bar Apps</p>
+        <p>
+          While redesigning the sidebar apps interface my main focus was, on
+          making it clear and efficient. We presented the apps in a way to help
+          users easily locate and incorporate the tools they require. User
+          friendly icons and tooltips provide understanding of each app making
+          them more accessible. We also implemented a drag and drop feature that
+          enables integration, between apps ensuring an experience. By
+          simplifying the process of selecting apps users can seamlessly
+          integrate them and enjoy a user friendly journey.
+        </p>
+        <img
+          src="img/sba-activepieces.png"
+          alt="activepieces1"
+          width="1500px"
+          class="mt-14 mb-14"
+        />
+        <p class="mb-4 font-extrabold">Dashboard</p>
+        <p>
+          I crafted an intuitive Dashboard interface that empowers users to
+          effortlessly monitor their integrated data. Clear, visually engaging
+          widgets provide real-time insights into app activities and automation
+          statuses. Users can easily track and analyze their integrated data
+          records, ensuring transparency and control. Interactive charts and
+          customizable data visualizations enhance user understanding, enabling
+          informed decision-making. The Dashboard's user-centric design promotes
+          a seamless experience, allowing users to efficiently manage their
+          integrated data, fostering a sense of control and confidence in their
+          workflows.
+        </p>
+        <img
+          src="img/dashboard-activepieces.png"
+          alt="activepieces1"
+          width="1500px"
+          class="mt-14 mb-14"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div class="mb-24 text-white">
+        <p class="text-3xl text-white font-bold mb-6">Tools Integration</p>
+        <p class="text-white mb-14">
+          An example of how workflows are integrated.
+        </p>
+        <img
+          src="img/ti-activepieces.png"
+          alt="activepieces1"
+          width="1500px"
+          class="mt-10 mb-8"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div class="mb-24">
+        <p class="text-3xl text-white font-bold mb-6">Material Design System</p>
+        <p class="text-white mb-14">
+          The Material Design kit was utilized to enhance collaboration between
+          designers and developers. It facilitated the use of consistent UI
+          components, typography, and color schemes, establishing a cohesive
+          visual language. Comprehensive documentation and reusable elements
+          ensured design consistency across the application. By providing a
+          shared reference point, designers effectively conveyed their vision,
+          while developers accurately translated it into the final product. This
+          seamless integration expedited development and yielded a visually
+          appealing user interface that improved user experience and
+          satisfaction.
+        </p>
+        <img
+          src="img/mds-activepieces.png"
+          alt="activepieces1"
+          width="1500px"
+          class="mb-5"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div class="mb-24">
+        <p class="text-3xl text-white font-bold mb-6">Review</p>
+        <p class="text-white mb-14">
+          I am immensely grateful to the CEO/Founder Ashraf, for recognizing the
+          impact of my collaborative efforts. The appreciation not only
+          validates the hard work I put into crafting intuitive interfaces but
+          also motivates me to continue striving for excellence. I am deeply
+          committed to driving user-centric design, making sure users find
+          value, ease, and delight in every interaction with Products.
+        </p>
+        <img
+          src="img/review-activepieces.png"
+          alt="activepieces1"
+          width="1500px"
+          class="mb-5"
+        />
+        <p class="text-white">
+          The redesign of the workflow creation interface turned out successful,
+          reducing the time it took for users to set up complex automations by
+          40% which boosted user satisfaction and allowed them to be more
+          productive.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex justify-between mb-28 clear-right">
+      <a
+        href="tripdoodler.html"
+        class="flex items-center justify-between text-white"
+      >
+        <span class="material-symbols-outlined"> arrow_back </span>
+        <span class="font-medium lg:text-3xl">TripDoodler</span>
+      </a>
+
+      <a class="flex items-center justify-between text-white" href="petme.html">
+        <span class="font-medium lg:text-3xl">PetMe</span>
+        <span class="material-symbols-outlined"> arrow_forward </span>
+      </a>
+    </div>
+    <footer class="w-342 text-center mx-auto">
+      <div class="text-white">
+        <span class="block mb-3"> &copy; Likita Ruth 2024 </span>
+        <a href="mailto:ruthlikita530@gmail.com" class="block mb-2 font-medium">
+          Email
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ruthlikita"
+          target="_blank"
+          class="block font-medium"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
