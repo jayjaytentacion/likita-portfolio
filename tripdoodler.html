@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/src/input.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
@@ -28,7 +35,7 @@
       font-size: 5rem;
     }
     .year-text {
-      font-size: 10rem;
+      font-size: 8rem;
     }
     .results-number {
       font-size: 4.5rem;
@@ -37,9 +44,6 @@
       font-size: 1.25rem;
     }
     @media (min-width: 1024px) {
-      .year-text {
-        font-size: 20rem;
-      }
       .results-number {
         font-size: 115px;
       }
@@ -49,12 +53,12 @@
     }
     @media (min-width: 768px) {
       .year-text {
-        font-size: 15rem;
+        font-size: 12rem;
       }
     }
   </style>
 
-  <body class="font-body leading-30 px-6 lg:px-16 xl:px-48 py-6 xl:py-12">
+  <body class="leading-30 px-6 lg:px-16 xl:px-48 py-6 xl:py-12">
     <nav class="flex mb-10 lg:mb-5 items-start justify-start">
       <a href="/">
         <img src="img/logo.png" alt="" />
@@ -196,8 +200,10 @@
 
     <div>
       <div class="mb-24 px-0">
-        <p class="text-3xl text-white font-bold mb-6">At-a-Glance👀</p>
-        <p class="text-white mb-14">
+        <p class="text-3xl text-white font-bold mb-6 header-text">
+          At-a-Glance👀
+        </p>
+        <p class="text-white mb-14 p-text">
           I held the pivotal role of Lead Product Designer within a startup,
           spearheading the complete redesign of TripDoodler. My expertise and
           creative direction played a key role in transforming the user
@@ -212,15 +218,17 @@
 
     <div>
       <div class="mb-10 text-white">
-        <p class="text-3xl text- font-bold mb-6">Covering The User Journey</p>
-        <p class="mb-4">
+        <p class="text-3xl text- font-bold mb-6 header-text">
+          Covering The User Journey
+        </p>
+        <p class="mb-4 p-text">
           My first task was to complete improved architecture by synthesizing
           learnings, mapping out the user journey, and delivering site
           specifications and recommended site map. Two of the largest pain
           points were:
           <span>
-            <li>Non-qualified leads requesting a demo.</li>
-            <li class="mb-4">
+            <li class="p-text">Non-qualified leads requesting a demo.</li>
+            <li class="mb-4 p-text">
               General confusion about what TripDoodler does and how.
             </li>
           </span>
@@ -392,7 +400,7 @@
         class="flex items-center justify-between text-white"
         href="activepieces.html"
       >
-        <span class="font-medium lg:text-3xl">ActivePieces(YC 22)</span>
+        <span class="font-medium lg:text-3xl">ActivePieces</span>
         <span class="material-symbols-outlined"> arrow_forward </span>
       </a>
     </div>

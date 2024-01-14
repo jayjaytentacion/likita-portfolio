@@ -16,6 +16,9 @@ body {
 .pink {
   @apply text-secondary-300 font-semibold;
 }
-p {
-  font-size: 18px;
+.p-text {
+  font-size: 21px;
+}
+.header-text {
+  font-size: 54px;
 }
