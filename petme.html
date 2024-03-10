@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Likita Ruth - TripDoodler</title>
+    <title>Likita Ruth - PetMe</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/src/input.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -12,6 +12,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
@@ -20,7 +27,7 @@
   </head>
   <style>
     body {
-      background-color: #5b6414;
+      background-color: white;
       font-family: 'Unbounded', sans-serif;
     }
     .material-symbols-outlined {
@@ -28,7 +35,7 @@
       font-size: 5rem;
     }
     .year-text {
-      font-size: 10rem;
+      font-size: 8rem;
     }
     .results-number {
       font-size: 4.5rem;
@@ -37,9 +44,6 @@
       font-size: 1.25rem;
     }
     @media (min-width: 1024px) {
-      .year-text {
-        font-size: 20rem;
-      }
       .results-number {
         font-size: 115px;
       }
@@ -49,92 +53,107 @@
     }
     @media (min-width: 768px) {
       .year-text {
-        font-size: 15rem;
+        font-size: 12rem;
       }
     }
   </style>
 
-  <body class="font-body leading-30 px-6 lg:px-16 xl:px-48 py-6 xl:py-12">
-    <nav class="flex mb-10 lg:mb-5 items-start justify-start">
+  <body class="leading-30 px-6 lg:px-16 xl:px-48 py-6 xl:py-12 primary-text">
+    <nav class="flex mb-10 lg:mb-20 items-start justify-start">
       <a href="/">
         <img src="img/logo.png" alt="" />
       </a>
     </nav>
     <div class="">
       <div
-        class="flex flex-col xl:flex-row gap-10 lg:gap-24"
+        class="flex flex-col xl:flex-row gap-10 lg:gap-10"
         style="
           font-size: 24px;
           font-weight: 500;
           line-height: 32px;
           letter-spacing: 0.5%;
-          color: white;
+          color: #212121;
           text-transform: uppercase;
         "
       >
         <img src="img/PetMeo.png" alt="petme" class="w-full xl:w-1/3" />
-        <div class="">
-          <p class="mb-4 text-lg lg:text-2xl" style="font-weight: 500">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            eius quam enim cum doloremque illum consequuntur laudantium error
-            doloribus impedit pariatur, maiores, voluptatum obcaecati esse
-            maxime odio harum veniam dolor?
+        <div class="flex flex-col gap-0 lg:gap-5">
+          <p class="mb-4 text-lg lg:text-2xl p-text" style="font-weight: 400">
+            I worked on this project, a focused dog platform , on the design
+            system and MVP design. I created an intuitive identity that stands
+            out from what’s becoming a problem in the Pet industry in Nigeria.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-text">
+            <p
+              class="border border-black w-max px-5 rounded-full"
+              style="font-size: 18px; font-weight: 400"
+            >
               UI/UX
             </p>
-            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+            <p
+              class="border border-black w-max px-5 rounded-full"
+              style="font-size: 18px; font-weight: 400"
+            >
               Mobile App
             </p>
-            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+            <p
+              class="border border-black w-max px-5 rounded-full"
+              style="font-size: 18px; font-weight: 400"
+            >
               Design System
             </p>
-            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+            <p
+              class="border border-black w-max px-5 rounded-full"
+              style="font-size: 18px; font-weight: 400"
+            >
               Design Challenge
             </p>
-            <p class="border w-max px-5 rounded-full" style="font-size: 18px">
+            <p
+              class="border border-black w-max px-5 rounded-full"
+              style="font-size: 18px; font-weight: 400"
+            >
               IOS App
             </p>
           </div>
         </div>
       </div>
       <p
-        style="font-weight: 800; line-height: 100px; color: white"
-        class="mt-6 text-5xl md:text-7xl lg:text-8xl -mb-6 md:mb-4 lg:mb-5"
+        style="font-weight: 800; line-height: 100px"
+        class="mt-6 text-5xl md:text-7xl lg:text-8xl -mb-6 md:mb-4 lg:mb-5 primary-text"
       >
         PETME
       </p>
       <p
-        style="font-weight: 400; line-height: 100px; color: white; opacity: 20%"
-        class="mb-16 md:mb-28 lg:mb-40 year-text"
+        style="font-weight: 400; line-height: 100px; opacity: 20%"
+        class="mb-16 md:mb-28 lg:mb-64 year-text primary-text"
       >
         2023
       </p>
     </div>
 
     <div
-      class="flex flex-col items-start lg:items-start lg:flex-row gap-10 mb-24 xl:mb-48"
+      class="flex flex-col items-start lg:items-start lg:flex-row gap-10 mb-32 xl:mb-48"
     >
-      <div class="w-full lg:w-1/3 flex flex-col text-white">
+      <div class="w-full lg:w-1/3 flex flex-col primary-text gap-5">
         <p
           style="
-            font-weight: 800;
-            size: 16px;
+            font-weight: 400;
+            font-size: 16px;
             line-height: 16px;
             margin-bottom: 15px;
             text-transform: uppercase;
           "
         >
-          Project Overview
+          Project Brief
         </p>
         <p
           style="
-            font-weight: 700;
-            font-size: 24px;
+            font-weight: 400;
+            font-size: 21px;
             line-height: 32px;
             letter-spacing: 0.5%;
           "
+          class="p-text"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
           excepturi delectus veniam quibusdam saepe architecto cupiditate
@@ -143,11 +162,11 @@
         </p>
       </div>
       <div
-        class="w-full lg:w-1/3 flex flex-col text-white lg:text-center text-start"
+        class="w-full lg:w-1/3 flex flex-col primary-text lg:text-center text-start gap-5"
       >
         <p
           style="
-            font-weight: 800;
+            font-weight: 400;
             size: 16px;
             line-height: 16px;
             margin-bottom: 15px;
@@ -158,20 +177,23 @@
         </p>
         <p
           style="
-            font-weight: 700;
+            font-weight: 400;
             font-size: 24px;
             line-height: 32px;
             letter-spacing: 0.5%;
           "
+          class="p-text"
         >
           2 Months
         </p>
       </div>
       <!-- work on this -->
-      <div class="w-full lg:w-1/3 text-white text-start lg:text-right">
+      <div
+        class="w-full lg:w-1/3 primary-text text-start lg:text-right flex flex-col gap-5"
+      >
         <p
           style="
-            font-weight: 800;
+            font-weight: 400;
             size: 16px;
             line-height: 16px;
             margin-bottom: 15px;
@@ -182,11 +204,12 @@
         </p>
         <p
           style="
-            font-weight: 700;
+            font-weight: 400;
             font-size: 24px;
             line-height: 32px;
             letter-spacing: 0.5%;
           "
+          class="p-text"
         >
           Sustainable Travel
         </p>
@@ -194,9 +217,9 @@
     </div>
 
     <div>
-      <div class="px-0">
-        <p class="text-3xl text-white font-bold mb-4">User Background</p>
-        <p class="text-white mb-8">
+      <div class="px-0 mb-32">
+        <p class="header-text primary-text font-bold mb-14">User Background</p>
+        <p class="primary-text p-text">
           Shanaya is a caring and active pet owner who also leads a busy life.
           She is tech-savvy and heavily relies on her phone for various
           activities.
@@ -204,16 +227,16 @@
       </div>
     </div>
 
-    <div>
-      <div class="mb-10 text-white">
-        <p class="text-3xl font-bold mb-2">Goal</p>
-        <p>
+    <div class="mb-32">
+      <div class="primary-text">
+        <p class="header-text font-bold mb-14">Goal</p>
+        <p class="p-text">
           The objective is to establish a user-centric platform designed to
           enable Shanaya (Case-Study User) in finding and booking various fun
           activities and events for her pet, Cookie.
         </p>
-        <p class="mt-4 font-extrabold">Browse Pets</p>
-        <p>
+        <p class="mt-4 font-extrabold p-text">Browse Pets</p>
+        <p class="p-text">
           The "Browse Pets Search Feature" allows users to easily search and
           explore available pets for adoption or purchase. It provides a
           user-friendly interface where individuals can filter and view pets
@@ -221,23 +244,23 @@
           the process of finding their ideal pet companion.
         </p>
 
-        <p class="mt-4 font-extrabold">Events</p>
-        <p>
+        <p class="mt-4 font-extrabold p-text">Events</p>
+        <p class="p-text">
           This feature displays upcoming pet-related gatherings, activities, or
           important dates. Users can access event details, including dates,
           locations, and descriptions, allowing them to stay informed about and
           potentially participate in relevant pet-related events, such as
           adoption drives, pet shows, or fundraisers.
         </p>
-        <p class="mt-4 font-extrabold">Favorite</p>
-        <p>
+        <p class="mt-4 font-extrabold p-text">Favorite</p>
+        <p class="p-text">
           This is a feature that enables users to mark and save their preferred
           pets or listings. It provides a convenient way for users to create a
           personalized list of pets they are interested in or considering for
           adoption, making it easier to revisit and compare their choices later.
         </p>
-        <p class="mt-4 font-extrabold">Confirmation</p>
-        <p>
+        <p class="mt-4 font-extrabold p-text">Confirmation</p>
+        <p class="p-text">
           "Confirmation after scheduling events" is a pop-up that provides users
           with a notification or message confirming that their event, such as a
           pet adoption appointment or a pet-related activity, has been
@@ -252,56 +275,80 @@
           alt="petme"
           width="1500px"
           class="mt-10 mb-8"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
         <img
           src="img/petme2.png"
           alt="petme"
           width="1500px"
           class="mt-10 mb-8"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
         <img
           src="img/petme3.png"
           alt="petme"
           width="1500px"
           class="mt-10 mb-8"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
         <img
           src="img/petme4.png"
           alt="petme"
           width="1500px"
           class="mt-10 mb-8"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
         <img
           src="img/petme6.png"
           alt="petme"
           width="1500px"
           class="mt-10 mb-8"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
         <img
           src="img/petme7.png"
           alt="petme"
           width="1500px"
           class="mt-10 mb-8"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
         <img
           src="img/petme8.png"
           alt="petme"
           width="1500px"
           class="mt-10 mb-8"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
         <img
           src="img/petme9.png"
           alt="petme"
           width="1500px"
-          class="mt-10 mb-8"
+          class="mt-10"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
       </div>
     </div>
 
-    <div>
-      <div class="mb-24 text-white">
-        <p class="text-3xl text-white font-bold mb-6">User Research</p>
-        <p class="text-white mb-14">
+    <div class="mb-32">
+      <div class="primary-text">
+        <p class="header-text primary-text font-bold mb-14">User Research</p>
+        <p class="primary-text mb-14 p-text">
           I conducted user research and gathered valuable feedback from
           individuals, particularly pet owners and enthusiasts. This feedback
           was used to shape a user persona, exemplified by Shanaya. For
@@ -315,87 +362,178 @@
           src="img/ur-petme.png"
           alt="petme"
           width="1500px"
-          class="mt-10 mb-8"
+          class="mt-10"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="500"
         />
       </div>
     </div>
 
-    <div>
-      <div class="mb-24">
-        <p class="text-3xl text-white font-bold mb-6">Sketches</p>
-        <p class="text-white mb-14">
-          The process starts with my initial idea wireframes, progresses to
-          mockups, and finally in a high-fidelity prototype. In this streamlined
-          version, you can witness how my approach effectively addresses the
-          user's requirements.
-        </p>
-        <img
-          src="img/sketches-petme.png"
-          alt="petme"
-          width="1500px"
-          class="mb-5"
-        />
-      </div>
+    <div class="mb-32">
+      <p class="header-text primary-text font-bold mb-14">Sketches</p>
+      <p class="primary-text mb-14 p-text">
+        The process starts with my initial idea wireframes, progresses to
+        mockups, and finally in a high-fidelity prototype. In this streamlined
+        version, you can witness how my approach effectively addresses the
+        user's requirements.
+      </p>
+      <img
+        src="img/sketches-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
     </div>
 
-    <div>
-      <div class="mb-24">
-        <p class="text-3xl text-white font-bold mb-6">
-          Wireframes & Prototypes
-        </p>
-        <p class="text-white mb-14">
-          Next, I transformed my concept into an interactive digital
-          low-fidelity prototype and presented it to three potential users to
-          gather valuable feedback.
-        </p>
-        <img src="img/wp-petme.png" alt="petme" width="1500px" class="mb-5" />
-      </div>
+    <div class="mb-32">
+      <p class="header-text primary-text font-bold mb-14">
+        Wireframes & Prototypes
+      </p>
+      <p class="text-black mb-14 p-text">
+        Next, I transformed my concept into an interactive digital low-fidelity
+        prototype and presented it to three potential users to gather valuable
+        feedback.
+      </p>
+      <img
+        src="img/wp-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
     </div>
 
-    <div>
-      <div class="mb-24">
-        <p class="text-3xl text-white font-bold mb-6">
-          Design System & Guidelines
-        </p>
-        <p class="text-white mb-14">
-          An established system guideline that fosters uniformity and coherence
-          throughout the platform, guaranteeing a seamless and harmonious user
-          experience across all features and elements. These guidelines serve as
-          a design compass, maintaining brand integrity and user familiarity.
-        </p>
-        <img src="img/dsg-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg1-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg2-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg3-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg4-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg5-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg6-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg7-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg8-petme.png" alt="petme" width="1500px" class="mb-5" />
-        <img src="img/dsg9-petme.png" alt="petme" width="1500px" class="mb-5" />
-      </div>
+    <div class="mb-32">
+      <p class="header-text primary-text font-bold mb-14">
+        Design System & Guidelines
+      </p>
+      <p class="primary-text mb-14 p-text">
+        An established system guideline that fosters uniformity and coherence
+        throughout the platform, guaranteeing a seamless and harmonious user
+        experience across all features and elements. These guidelines serve as a
+        design compass, maintaining brand integrity and user familiarity.
+      </p>
+      <img
+        src="img/dsg-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg1-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg2-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg3-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg4-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg5-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg6-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg7-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg8-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
+      <img
+        src="img/dsg9-petme.png"
+        alt="petme"
+        width="1500px"
+        class="mb-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      />
     </div>
 
-    <div>
-      <div class="mb-24">
-        <p class="text-3xl text-white font-bold mb-6">Final Designs</p>
-        <img src="img/fd-petme.png" alt="petme" width="1500px" class="mb-5" />
-      </div>
+    <div class="mb-32">
+      <p class="header-text primary-text font-bold mb-14">Final Designs</p>
+      <img src="img/fd-petme.png" alt="petme" width="1500px" class="mb-5" />
     </div>
 
-    <div class="mb-10 mr-4">
-      <p class="text-3xl text-white font-bold mb-6">Prototype</p>
+    <div class="mb-32 mr-0 xl:mr-4">
+      <p class="header-text primary-text font-bold mb-14">Prototype</p>
       <iframe
         width="100%"
         height="700"
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F30PHAxLkCRrMkB0i3C0cyZ%2FPetMe-Project%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D458-5527%26page-id%3D26%253A1140%26scaling%3Dscale-down%26starting-point-node-id%3D458%253A5527%26t%3DFwXn80ytRIDXSZbg-1%26type%3Ddesign%26viewport%3D5341%252C7472%252C0.2%26mode%3Ddesign"
         allowfullscreen
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
       ></iframe>
     </div>
 
-    <div class="mb-10">
-      <p class="text-3xl text-white font-bold mb-6">What I Learned 🌱</p>
-      <p class="text-white">
+    <div class="mb-32">
+      <p class="header-text primary-text font-bold mb-14 mt-24">
+        What I Learned 🌱
+      </p>
+      <p class="primary-text p-text">
         During my tenure on this project, I've embraced the vital lesson of
         early and comprehensive user feedback collection. I initiated this
         process just a few weeks into the project, which provided strong
@@ -404,33 +542,52 @@
     </div>
 
     <div class="flex justify-between mb-28 clear-right">
-      <a
-        href="tripdoodler.html"
-        class="flex items-center justify-between text-white"
-      >
+      <a href="activepieces.html" class="navigation primary-text">
         <span class="material-symbols-outlined"> arrow_back </span>
-        <span class="font-medium lg:text-3xl">TripDoodler</span>
+        <span class="font-medium lg:text-3xl">ActivePieces</span>
       </a>
 
-      <a class="flex items-center justify-between text-white" href="petme.html">
-        <span class="font-medium lg:text-3xl">PetMe</span>
+      <a class="navigation primary-text" href="accesspowersystems.html">
+        <span class="font-medium lg:text-3xl">APS</span>
         <span class="material-symbols-outlined"> arrow_forward </span>
       </a>
     </div>
-    <footer class="w-342 text-center mx-auto">
-      <div class="text-white">
-        <p class="block mb-3">&copy; Likita Ruth 2024</p>
-        <a href="mailto:ruthlikita530@gmail.com" class="block mb-2 font-medium">
-          Email
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ruthlikita"
-          target="_blank"
-          class="block font-medium"
-        >
-          LinkedIn
-        </a>
+    <footer class="text-center">
+      <div class="primary-text flex flex-col items-center">
+        <span class="block mb-5 w-max"> &copy; Likita Ruth 2024 </span>
+        <div class="flex flex-col gap-5">
+          <a
+            href="mailto:ruthlikita530@gmail.com"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="flex items-center gap-1">
+              <img
+                src="img/official-gmail-icon-2020-.svg"
+                alt="gmail"
+                width="30"
+              />
+              <p class="ml-3">Gmail</p>
+              <img src="img/Icon.png" alt="" width="15" />
+            </div>
+          </a>
+          <a
+            href="http://www.linkedin.com/in/ruthlikita"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="flex items-center gap-1">
+              <img src="img/linkedin-icon-2.svg" alt="linkedin" width="30" />
+              <p class="ml-3">Linkedin</p>
+              <img src="img/Icon.png" alt="" width="15" />
+            </div>
+          </a>
+        </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

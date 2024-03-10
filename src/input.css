@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap');
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('/OTF/GeneralSans-Bold.otf') format('otf');
+}
+
+::selection {
+  background-color: #c9c8c8;
+  color: #212121;
+}
 
 body {
   font-family: 'Unbounded', sans-serif;
@@ -16,6 +26,79 @@ body {
 .pink {
   @apply text-secondary-300 font-semibold;
 }
-p {
-  font-size: 18px;
+.p-text {
+  font-size: 16px;
+  font-family: 'GeneralSans', 'sans-serif';
+}
+.header-text {
+  font-size: 36px;
+}
+.body-height {
+  height: 92vh;
+}
+.body-height-works {
+  height: 92vh;
+}
+.border-body {
+  border: 1px solid #636363;
+}
+.primary-text {
+  color: #212121;
+}
+.contact-link {
+  scale: 1;
+  transition: all 100ms ease-in;
+}
+.contact-link:hover {
+  scale: 1.1;
+}
+.work-link {
+  scale: 1;
+  transition: all 100ms ease-in;
+}
+.work-link:hover {
+  scale: 1.1;
+}
+.work-item:hover {
+  position: relative;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation:hover {
+  scale: 1.1;
+  transition: all 100ms ease-in;
+}
+.nav-link {
+  scale: 1;
+  transition: all 100ms ease-in;
+}
+.nav-link:hover {
+  scale: 1.1;
+}
+
+@media (min-width: 768px) {
+  .p-text {
+    font-size: 18px;
+  }
+  .header-text {
+    font-size: 48px;
+  }
+  .body-height-works {
+    height: max-content;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-text {
+    font-size: 21px;
+  }
+  .header-text {
+    font-size: 54px;
+  }
+  .body-height-works {
+    height: 92vh;
+  }
 }

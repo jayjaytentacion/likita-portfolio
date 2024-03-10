@@ -1,29 +1,9 @@
-const burger = document.querySelector('#burger');
-const menu = document.querySelector('#menu');
-const date = document.getElementById('#date');
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('navbar-toggle');
+  const menu = document.getElementById('navbar-menu');
 
-if (burger !== null) {
-  burger.addEventListener('click', (e) => {
-    if (menu.classList.contains('hidden')) {
-      menu.classList.remove('hidden');
-    } else {
-      menu.classList.add('hidden');
-    }
+  toggleButton.addEventListener('click', function () {
+    menu.classList.toggle('active');
+    toggleButton.classList.toggle('active');
   });
-}
-
-$(document).on('scroll', function () {
-  var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
-  var tags = $('.tag');
-
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
-
-    if ($(tag).position().top < pageBottom) {
-      $(tag).addClass('visible');
-    } else {
-      $(tag).removeClass('visible');
-    }
-  }
 });
