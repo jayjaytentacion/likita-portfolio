@@ -13,74 +13,65 @@
       href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Likita Ruth</title>
   </head>
 
   <style>
     body {
-      background-color: #5b6414;
       font-family: 'Unbounded', sans-serif;
+      background-color: white;
     }
   </style>
 
-  <body class="leading-30 px-6 lg:px-16 xl:px-48 py-6 xl:py-12 text-white">
-    <nav class="flex justify-between">
-      <div class="hidden lg:block"></div>
-      <div>
-        <img
-          src="img/logo-rounded.png"
-          alt="likita"
-          width="70"
-          class="-mt-12"
-        />
-      </div>
-      <div class="flex gap-14 lg:gap-24 text-xl font-bold">
-        <a href="index.html">
-          <p class="underline">Works</p>
+  <body
+    class="px-6 lg:px-16 xl:px-10 py-6 xl:py-2 primary-text m-10 body-height lg:overflow-y-hidden overflow-x-hidden"
+  >
+    <nav class="justify-between hidden sm:flex">
+      <div class="hidden lg:flex items-center">Product Designer</div>
+      <a href="/">
+        <div class="flex items-center gap-3 lg:mt-7">
+          <img src="img/logo.png" alt="Likita Ruth" />
+          <p>Likita Ruth</p>
+        </div>
+      </a>
+      <div class="flex gap-6 lg:gap-8 items-center">
+        <a href="works.html">
+          <p class="nav-link">Works</p>
         </a>
         <a href="info.html">
-          <p class="">Info</p>
+          <p class="nav-link">Info</p>
         </a>
       </div>
     </nav>
 
-    <div class="mt-32">
-      <p class="text-lg mb-6">Product Designer</p>
-      <p class="text-2xl font-bold">
-        Designing cool stuff for impact and innovation
-      </p>
-    </div>
-
-    <div class="mt-56">
-      <div></div>
-      <div class="w-full lg:w-2/5 float-none lg:float-right">
-        <p class="text-base lg:text-xl text-right font-bold">RECENT WORKS</p>
-        <div class="flex flex-col gap-6 mt-8">
-          <div class="flex justify-between items-center">
-            <p class="text-base lg:text-xl">2023/Travel</p>
-            <a href="tripdoodler.html">
-              <p class="text-2xl lg:text-3xl xl:text-4xl">TripDoodler</p>
-            </a>
-          </div>
-          <div class="flex justify-between items-center">
-            <p class="text-base lg:text-xl">2023/Automation</p>
-            <a href="activepieces.html"
-              ><p class="text-2xl lg:text-3xl xl:text-4xl">Activepieces</p></a
-            >
-          </div>
-          <div class="flex justify-between items-center">
-            <p class="text-base lg:text-xl">2023/Pets</p>
-            <a href="petme.html"
-              ><p class="text-2xl lg:text-3xl xl:text-4xl">PetMe</p></a
-            >
-          </div>
-          <div class="flex justify-between items-center">
-            <p class="text-base lg:text-xl">2022/Fintech</p>
-            <a href="ronda.html"
-              ><p class="text-2xl lg:text-3xl xl:text-4xl">Ronda</p></a
-            >
-          </div>
+    <nav class="justify-between items-center flex sm:hidden border">
+      <a href="/">
+        <div class="flex items-center gap-3 lg:mt-7">
+          <img src="img/logo.png" alt="Likita Ruth" />
+          <p>Likita Ruth</p>
         </div>
+      </a>
+      <div>
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+    </nav>
+
+    <div
+      class="mt-20 flex flex-col lg:flex-row justify-between gap-14 md:gap-14 lg:gap-0 items-center"
+    >
+      <div class="w-full lg:w-2/5">
+        <img src="img/BookLikita.png" alt="" class="w-full lg:w-max" />
+      </div>
+      <div class="w-full lg:w-2/5 just flex justify-end -mr-8">
+        <p class="mt-6 w-96 mb-20 lg:mb-0">
+          Designing cool stuff for impact and innovation. I focus on empathy-led
+          design that resonates with users and growth, driving client retention
+          and reduced bounce rates.
+        </p>
       </div>
     </div>
   </body>

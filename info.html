@@ -18,53 +18,68 @@
 
   <style>
     body {
-      background-color: #5b6414;
       font-family: 'Unbounded', sans-serif;
+      background-color: white;
     }
   </style>
 
-  <body class="leading-30 px-6 lg:px-16 xl:px-48 py-6 xl:py-12 text-white">
+  <body
+    class="px-6 lg:px-16 xl:px-10 py-6 xl:py-2 primary-text m-10 body-height lg:overflow-y-hidden overflow-x-hidden"
+  >
     <nav class="flex justify-between">
-      <div class="hidden lg:block"></div>
-      <div>
-        <img
-          src="img/logo-rounded.png"
-          alt="likita"
-          width="70"
-          class="-mt-12"
-        />
-      </div>
-      <div class="flex gap-24 text-xl font-bold">
-        <a href="index.html">
-          <p class="">Works</p>
+      <div class="hidden lg:flex items-center">Product Designer</div>
+      <a href="/">
+        <div class="flex items-center gap-3 lg:mt-7">
+          <img src="img/logo.png" alt="Likita Ruth" />
+          <p>Likita Ruth</p>
+        </div>
+      </a>
+      <div class="flex gap-6 lg:gap-8 items-center">
+        <a href="works.html">
+          <p class="nav-link">Works</p>
         </a>
-        <a href="info.html">
-          <p class="underline">Info</p>
+        <a href="/">
+          <p class="underline nav-link">Info</p>
         </a>
       </div>
     </nav>
 
-    <div class="mt-32">
-      <p class="text-lg mb-6">Product Designer</p>
-      <p class="text-2xl font-bold">
-        Designing cool stuff for impact and innovation
-      </p>
-    </div>
-
-    <div class="mt-56">
-      <div></div>
-      <div class="w-full lg:w-2/5 float-right">
-        <img
-          src="img/penguin.gif"
-          alt=""
-          width="50"
-          class="rounded-full mb-8"
-        />
-        <p class="text-xl">
-          Designing cool stuff for impact and innovation. I focus on empathy-led
-          design that resonates with users and growth, driving client retention
-          and reduced bounce rates.
-        </p>
+    <div
+      class="mt-20 flex flex-col lg:flex-row justify-between gap-36 md:gap-14 lg:gap-0 items-center"
+    >
+      <div class="w-full lg:w-2/5">
+        <img src="gifs/likita-gif.gif" alt="" class="w-full lg:w-max" />
+      </div>
+      <div class="mb-20">
+        <p class="mb-8 text-base lg:text-xl">Contact Me</p>
+        <div class="flex flex-col gap-5">
+          <a
+            href="mailto:ruthlikita530@gmail.com"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="flex items-center gap-1">
+              <img
+                src="img/official-gmail-icon-2020-.svg"
+                alt="gmail"
+                width="30"
+              />
+              <p class="ml-3">Gmail</p>
+              <img src="img/Icon.png" alt="" width="15" />
+            </div>
+          </a>
+          <a
+            href="http://www.linkedin.com/in/ruthlikita"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="flex items-center gap-1">
+              <img src="img/linkedin-icon-2.svg" alt="linkedin" width="30" />
+              <p class="ml-3">Linkedin</p>
+              <img src="img/Icon.png" alt="" width="15" />
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </body>
